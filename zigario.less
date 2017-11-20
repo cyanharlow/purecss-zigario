@@ -6,7 +6,7 @@
 @skin: #ecc5b5;
 @backgroundred: #ca2902;
 
-@bikinicolor: #be0303;
+@bikinicolor: #329482;
 
 .vendor(@property, @value) {
     @{property}: @value;
@@ -948,7 +948,7 @@ body {
 
                         .boob {
                             background-color: #ffd4d4;
-                            width: 42%;
+                            width: 44%;
                             height: 108%;
                             top: 49%;
                             .vendor(border-radius, ~'59% 41% 0 0 / 42% 42% 0 0');
@@ -1045,8 +1045,9 @@ body {
                         width: 35%;
                         height: 21%;
                         top: 43%;
-                        .vendor(border-radius, ~'5% 95% 67% 25% / 5% 26% 0% 95%');
-                        box-shadow: inset -3em -12em 21em -8em darken(@bikinicolor, 20%), inset 0 -58em 48em -15em darken(@bikinicolor, 10%), inset 6em 29em 64em -5em lighten(@bikinicolor, 20%);
+                        .vendor(border-radius, ~'5% 95% 67% 19% / 5% 26% 0% 95%');
+                        box-shadow: inset -3em -20em 18em -14em darken(@bikinicolor, 30%), inset 0em 27em 29em -13em lighten(@bikinicolor, 20%);
+                        background-image: linear-gradient(22deg, darken(@bikinicolor, 25%), transparent 55%),  radial-gradient(ellipse farthest-corner at center 22%, lighten(@bikinicolor, 20%), darken(@bikinicolor, 15%));
 
                         &.left {
                             left: 15%;
@@ -1567,7 +1568,7 @@ body {
                         height: 3.1%;
                         z-index: 3;
                         .vendor(border-radius, ~'50% 50% 50% 50% / 60% 34% 66% 40%');
-                        .vendor(box-shadow, ~'2em -7em 1em -5em #f9efe0, 4em 1em 6em -1em #380202, inset 3em 1em 1em -2em #251802, -4em 9em 7em -3em #e48985, -3em 1em 3em 3em #de9e91, 0 -4em 2em 0em #FEC3B3, 0 -6em 1em 0em #400202, 1em -6em 11em 11em #a7493e, 0em 34em 18em -1em rgba(251, 243, 229, 0.49), inset 0 7em 3em -6em rgba(0, 0, 0, 0.47)');
+                        .vendor(box-shadow, ~'4em 1em 6em -1em #380202, inset 3em 1em 1em -2em #251802, 6em 7em 6em -2em #c04b46, -3em 1em 3em 3em #de9e91, 0em 34em 18em -1em rgba(251, 243, 229, 0.49), inset 0 7em 3em -6em rgba(0, 0, 0, 0.47)');
 
                         .lash {
                             border-color: #251802;
@@ -1652,14 +1653,23 @@ body {
                                 }
                             }
                         }
-
+                        .eyelid {
+                            width: 130%;
+                            height: 227%;
+                            bottom: 0;
+                            right: -17%;
+                            box-shadow: 0 -4em 2em -1em #741f1f, 0 -7em 7em 6em #ad5a5a;
+                            background-color: #a33d3d;
+                            background-image: radial-gradient(ellipse at center top, #f3e4d4, #a33d3d);
+                            border-radius: ~'50% 50% 0 0/ 90% 43% 0 0';
+                        }
                         .eyeliner {
                             .vendor(border-radius, 100% 0);
                             border-bottom: 10em solid #251802;
                             &.inner {
                                 bottom: -15%;
-                                right: 58%;
-                                width: 47%;
+                                right: 17%;
+                                width: 90%;
                                 height: 25%;
                                 .vendor(transform, rotate(-171deg));
                             }
@@ -1674,23 +1684,27 @@ body {
                         }
 
                         .eyeball {
+                            border-top: 4em solid #000;
                             border-bottom: 1em solid #ff9c8f;
+                            top: -57%;
                             border-left: 0;
                             border-right: 0;
                             overflow: hidden;
                             width: 100%;
-                            height: 107%;
-                            .vendor(box-shadow, -5em 2em 2em -3em #fff);
+                            height: 119%;
+                            background-color: #8c3d3d;
+                            background-image: radial-gradient(circle at 46% 30%, white, #a95050 86%);
+                            .vendor(box-shadow, ~'-5em 2em 2em -3em #fff, inset -4em 2em 4em -2em #751111');
                             .vendor(border-radius, inherit);
 
                             .iris {
                                 background-color: #fff;
-                                width: 50%;
-                                height: 235%;
+                                width: 46%;
+                                height: 196%;
                                 .vendor(border-radius, ~'100%');
                                 left: 30%;
-                                top: -98%;
-                                .vendor(box-shadow, ~'inset 0 0 3em 2em #01342c, inset 0 0 3em 3em #7dbe88, inset 0 0 0 4.5em #edaf27, inset 0 0 0em 7em #000, 0 0 6em 5em #f5cfc5, 0 0 0 15em #af4b4b');
+                                top: -80%;
+                                .vendor(box-shadow, ~'inset 0 0 4em 2em #193c30, inset 0 0 0 5em #8aa378, inset 0 0 0em 7em #000');
 
                                 &:after {
                                     .pseudoclear;
