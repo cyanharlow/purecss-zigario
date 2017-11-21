@@ -1068,7 +1068,7 @@ body {
                         top: 43%;
                         .vendor(border-radius, ~'5% 95% 67% 27% / 5% 26% 68% 95%');
                         box-shadow: inset -3em -16em 7em -14em fade(darken(@bikinicolor, 30%), 30%), inset 0em 27em 7em -23em lighten(@bikinicolor, 20%);
-                        background-image: linear-gradient(11deg, fade(darken(@bikinicolor, 25%), 23%) 50%, transparent 55%), radial-gradient(ellipse farthest-corner at center 22%, lighten(@bikinicolor, 20%), darken(@bikinicolor, 15%));
+                        background-image: radial-gradient(ellipse farthest-corner at center 22%, lighten(@bikinicolor, 20%), darken(@bikinicolor, 15%));
 
                         &.left {
                             left: 15%;
@@ -1084,13 +1084,25 @@ body {
                             width: 100%;
                             height: 100%;
                             border-radius: inherit;
-                            border-top: 1em dashed darken(@bikinicolor, 50%);
+                            border-top: 1em dashed darken(@bikinicolor, 40%);
 
                             &.top {
                                 top: 5%;
                             }
+                            &.midshadow {
+                                top: 40%;
+                                background: rgba(0, 0, 0, 0.18);
+                                border-top: 0;
+                                box-shadow: 0 -4em 5em -2em rgba(0, 0, 0, 0.29), inset 0 3em 5em -2em lighten(@bikinicolor, 8%);
+                            }
                             &.mid {
                                 top: 45%;
+                            }
+                            &.bottom {
+                                bottom: 3%;
+                                right: 3%;
+                                border: 1em dashed darken(@bikinicolor, 20%);
+
                             }
                         }
                     }
