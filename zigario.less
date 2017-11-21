@@ -736,12 +736,12 @@ body {
                 }
 
                 .armfore {
-                    width: 25.5%;
+                    width: 27.5%;
                     height: 156%;
-                    left: -6.5%;
+                    left: -9.5%;
                     background: #f7cac6;
                     top: 71%;
-                    box-shadow: inset 3em -38em 39em 19em #893929;
+                    box-shadow: inset -1em 5em 47em 20em #893929;
                     border-radius: ~'64% 34% 20% 49% / 27% 18% 50% 61%';
                     transform-origin: 0 0;
                     transform: perspective(33em) rotateX(-1.4deg);
@@ -749,17 +749,25 @@ body {
 
                 .rightarm {
                     top: 24.5%;
-                    left: 1%;
+                    left: 0%;
                     background-color: #f4d1c3;
                     margin: auto;
                     overflow: hidden;
                     width: 19%;
                     height: 69%;
-                    .vendor(transform, ~'perspective(605em) rotateX(-1.7deg) rotate(17deg)');
-                    .vendor(border-radius, ~'100% 0 50% 51% / 29% 0 4% 3%');
+                    .vendor(transform, ~'perspective(605em) rotateX(-1.5deg) rotate(17deg)');
+                    .vendor(border-radius, ~'100% 0 89% 1% / 29% 0 15% 3%');
                     .vendor(box-shadow, ~'inset -50em 2em 36em -32em #7e2317, inset 47em -5em 41em -32em #8b2c21');
+
                 }
 
+                .innerelbow {
+                    width: 3%;
+                    top: 82%;
+                    left: 9%;
+                    transform: rotate(-13deg);
+                    box-shadow: 0 -21em 19em 14em #a2584b54, -1em 0 19em 13em #ebc3b6;
+                }
                 .waist {
                     top: 35%;
                     left: 15%;
@@ -779,16 +787,20 @@ body {
                         .vendor(box-shadow, ~'inset 0 26em 123em 40em #5c1008');
 
                         .underboobs {
-                            width: 102%;
+                            width: 97%;
                             height: 39%;
+                            top: 22%;
                             transform: rotateZ(9deg);
+                            border-radius: ~'0 0 50% 50% / 0 0 21% 6%';
+                            background-color: @bikinicolor;
+                            background-image: linear-gradient(72deg, darken(@bikinicolor, 30%), transparent 25%), linear-gradient(-72deg, darken(@bikinicolor, 30%), transparent 25%);
+                            box-shadow: inset 0 -3em 2em -1em darken(@bikinicolor, 14%), inset 0 -6em 2em -1em rgba(234, 226, 226, 0.17), 0 3em 3em 0em rgba(121, 47, 34, 0.4);
 
                             .underboob {
-                                .vendor(box-shadow, ~'0 24em 5em -1em rgba(108, 10, 5, 0.39), 0 33em 10em 1em rgba(116, 9, 4, 0.54)');
-                                height: 100%;
+                                .vendor(box-shadow, ~'-11em 21em 19em 7em  rgba(0, 0, 0, 0.23)');
+                                height: 53%;
                                 width: 50%;
-                                background: #c97b70;
-                                .vendor(border-radius, ~'0 0 61% 39%/ 0 0 36% 44%');
+                                .vendor(border-radius, ~'0 0 61% 39% / 0 0 99% 26%');
 
                                 &.right {
                                     right: 0;
@@ -947,7 +959,7 @@ body {
 
                         .boob {
                             background-color: #ffd4d4;
-                            width: 44%;
+                            width: 45%;
                             height: 108%;
                             top: 49%;
                             .vendor(border-radius, ~'59% 41% 0 0 / 42% 42% 0 0');
@@ -967,11 +979,11 @@ body {
                             }
 
                             &.left {
-                                right: 52%;
+                                right: 51%;
                             }
 
                             &.right {
-                                left: 52%;
+                                left: 51%;
                                 .vendor(transform, ~'scaleX(-1)');
                             }
                         }
@@ -1041,12 +1053,13 @@ body {
                     background: @bikinicolor;
 
                     &.top {
+                        overflow: hidden;
                         width: 35%;
                         height: 21%;
                         top: 43%;
-                        .vendor(border-radius, ~'5% 95% 67% 27% / 5% 26% 26% 95%');
-                        box-shadow: inset -3em -20em 18em -14em darken(@bikinicolor, 30%), inset 0em 27em 7em -23em lighten(@bikinicolor, 20%);
-                        background-image: linear-gradient(22deg, darken(@bikinicolor, 25%), transparent 55%),  radial-gradient(ellipse farthest-corner at center 22%, lighten(@bikinicolor, 20%), darken(@bikinicolor, 15%));
+                        .vendor(border-radius, ~'5% 95% 67% 27% / 5% 26% 68% 95%');
+                        box-shadow: inset -3em -16em 7em -14em fade(darken(@bikinicolor, 30%), 30%), inset 0em 27em 7em -23em lighten(@bikinicolor, 20%);
+                        background-image: linear-gradient(11deg, fade(darken(@bikinicolor, 25%), 23%) 50%, transparent 55%), radial-gradient(ellipse farthest-corner at center 22%, lighten(@bikinicolor, 20%), darken(@bikinicolor, 15%));
 
                         &.left {
                             left: 15%;
@@ -1056,6 +1069,20 @@ body {
                             right: 15%;
                             .vendor(transform, scaleX(-1));
 
+                        }
+
+                        .stitch {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: inherit;
+                            border-top: 1em dashed darken(@bikinicolor, 50%);
+
+                            &.top {
+                                top: 5%;
+                            }
+                            &.mid {
+                                top: 45%;
+                            }
                         }
                     }
 
