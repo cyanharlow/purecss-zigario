@@ -766,7 +766,7 @@ body {
                     top: 80%;
                     left: 9%;
                     transform: rotate(-13deg);
-                    box-shadow: 0 -21em 19em 14em #a2584b54, -1em 0 19em 13em #ebc3b6;
+                    box-shadow: 0 -21em 19em 14em rgba(162, 88, 75, 0.3), -1em 0 19em 13em #ebc3b6;
                 }
                 .waist {
                     top: 35%;
@@ -786,6 +786,15 @@ body {
                         .vendor(border-radius, ~'12% 12% 50% 27% / 2% 2% 98% 98%');
                         .vendor(box-shadow, ~'inset 0 26em 123em 40em #5c1008');
 
+                        .bottomshadow {
+                            width: 80%;
+                            left: 7%;
+                            height: 15%;
+                            bottom: 22%;
+                            border-radius: 50%;
+                            transform: rotate(1deg);
+                            box-shadow: inset 0 -9em 10em 0em rgba(114, 40, 28, 0.5);
+                        }
                         .underboobs {
                             width: 97%;
                             height: 39%;
@@ -1121,8 +1130,28 @@ body {
                     left: 12%;
                     height: 65%;
                     width: 94%;
+                    overflow: hidden;
                     .vendor(transform, rotate(-6deg));
                     .vendor(border-radius, ~'29% 30% 0% 0% / 100% 100% 0% 0%');
+
+                    .topshadow {
+                        width: 52%;
+                        left: 21%;
+                        height: 15%;
+                        top: -9%;
+                        border-radius: 50%;
+                        transform: rotate(-3deg);
+                        box-shadow: 0 7em 4em 1em lighten(@bikinicolor, 5%);
+                    }
+                    .topseam {
+                        border-bottom: 1em dashed darken(@bikinicolor, 33%);
+                        width: 60%;
+                        left: 15%;
+                        height: 20%;
+                        top: -9%;
+                        border-radius: 50%;
+                        box-shadow: 8em 25em 26em -14em lighten(@bikinicolor, 2%);
+                    }
                 }
 
                 .abovearm {
