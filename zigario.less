@@ -756,7 +756,7 @@ body {
                     width: 19%;
                     height: 63%;
                     transform: perspective(605em) rotateX(-1.5deg) rotate(19deg);
-                    border-radius: 100% 0 89% 12% / 36% 0 15% 62%;
+                    border-radius: ~'100% 0 89% 12% / 36% 0 15% 62%';
                     box-shadow: inset -50em 2em 36em -32em #7e2317, inset 47em -5em 41em -32em #8b2c21;
                 }
 
@@ -1111,9 +1111,19 @@ body {
                         width: 5%;
                         height: 26%;
                         top: 19%;
+                        overflow: hidden;
                         background: darken(@bikinicolor, 3%);
                         box-shadow: inset 0 12em 8em -8em fade(lighten(@bikinicolor, 15%), 60%), inset 0 -10em 3em 4em darken(@bikinicolor, 5%), 2em 3em 5em -2em rgba(0,0,0,0.5);
 
+                        &:before {
+                            .pseudoclear;
+                            height: 115%;
+                            top: -22%;
+                            width: 63%;
+                            left: 12%;
+                            border-radius: inherit;
+                            border: 1em dashed darken(@bikinicolor, 35%);
+                        }
 
                           &.left {
                             left: 12%;
