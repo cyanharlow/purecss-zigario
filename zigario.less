@@ -725,24 +725,23 @@ body {
                     overflow: hidden;
                     width: 17%;
                     height: 55%;
-                    .vendor(transform, ~'rotate(-2deg)');
+                    .vendor(transform, ~'rotate(-5deg)');
                     margin: auto;
                     background-color: #efd3c7;
                     right: 1%;
                     top: 18.5%;
-                    border: 1em solid #6b1104;
-                    .vendor(border-radius, ~'0 94% 27% 41% / 0 26% 60% 25%');
+                    .vendor(border-radius, ~'0 94% 27% 41% / 0 37% 60% 25%');
                     .vendor(box-shadow, ~'inset -5em 3em 15em -2em #fff, inset 30em 0em 47em 1em #c1695d, inset -15em -3em 33em 0em #c26355');
                 }
 
                 .armfore {
-                    width: 26.5%;
+                    width: 25.5%;
                     height: 156%;
-                    left: -9.5%;
+                    left: -8.5%;
                     background: #f7cac6;
                     top: 68%;
                     box-shadow: inset 1em 17em 47em 23em #893929;
-                    border-radius: ~'64% 20% 20% 49% / 27% 18% 50% 61%';
+                    border-radius: ~'54% 20% 20% 49% / 27% 18% 50% 61%';
                     transform-origin: 0 0;
                     transform: perspective(33em) rotateX(-1.4deg);
                 }
@@ -1066,8 +1065,8 @@ body {
                         height: 21%;
                         top: 43%;
                         .vendor(border-radius, ~'5% 95% 67% 27% / 5% 26% 68% 95%');
-                        box-shadow: inset -3em -16em 7em -14em fade(darken(@bikinicolor, 30%), 30%), inset 0em 27em 7em -23em lighten(@bikinicolor, 20%);
-                        background-image: radial-gradient(ellipse farthest-corner at center 22%, lighten(@bikinicolor, 20%), darken(@bikinicolor, 15%));
+                        box-shadow: inset 22em -2em 18em -8em rgba(0, 0, 0, 0.3), inset -3em -16em 7em -14em fade(darken(@bikinicolor, 30%), 30%), inset 0em 27em 7em -23em lighten(@bikinicolor, 20%);
+                        background-image: radial-gradient(ellipse farthest-side at center 22%, lighten(@bikinicolor, 30%), darken(@bikinicolor, 8%));
 
                         &.left {
                             left: 15%;
@@ -1112,8 +1111,9 @@ body {
                         height: 26%;
                         top: 19%;
                         overflow: hidden;
-                        background: darken(@bikinicolor, 3%);
-                        box-shadow: inset 0 12em 8em -8em fade(lighten(@bikinicolor, 15%), 60%), inset 0 -10em 3em 4em darken(@bikinicolor, 5%), 2em 3em 5em -2em rgba(0,0,0,0.5);
+                        background-color: darken(@bikinicolor, 3%);
+                        background-image: linear-gradient(to bottom, darken(@bikinicolor, 3%), lighten(@bikinicolor, 11%), darken(@bikinicolor, 3%) 55%);
+                        box-shadow: inset 0 -10em 3em 4em darken(@bikinicolor, 5%), 2em 3em 5em -2em rgba(0,0,0,0.5);
 
                         &:before {
                             .pseudoclear;
@@ -1132,11 +1132,9 @@ body {
                           }
 
                           &.right {
-                              right: 12%;
+                              right: 13%;
                               top: 18.7%;
                               .vendor(border-radius, ~'30% 70% 95% 5% / 3% 5% 83% 72%');
-
-
                           }
 
                       }
@@ -1152,6 +1150,7 @@ body {
                     height: 65%;
                     width: 94%;
                     overflow: hidden;
+                    background-image: radial-gradient(ellipse at center 14%, lighten(@bikinicolor, 15%), darken(@bikinicolor, 3%) 35%);
                     .vendor(transform, rotate(-6deg));
                     .vendor(border-radius, ~'29% 30% 0% 0% / 100% 100% 0% 0%');
 
@@ -1189,7 +1188,7 @@ body {
 
                     &.front {
                         top: 22%;
-                        right: 14%;
+                        right: 13%;
                         .vendor(transform, rotate(-26deg));
                     }
 
