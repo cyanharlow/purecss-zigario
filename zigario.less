@@ -7,6 +7,8 @@
 @backgroundred: #ca2902;
 
 @bikinicolor: #329482;
+@bikinistitchcolor: darken(@bikinicolor, 40%);
+@bikinistitch: 1em dashed fade(@bikinistitchcolor, 50%);
 
 .vendor(@property, @value) {
     @{property}: @value;
@@ -1082,7 +1084,7 @@ body {
                             width: 100%;
                             height: 100%;
                             border-radius: inherit;
-                            border-top: 1em dashed darken(@bikinicolor, 40%);
+                            border-top: @bikinistitch;
 
                             &.top {
                                 top: 5%;
@@ -1099,7 +1101,7 @@ body {
                             &.bottom {
                                 bottom: 3%;
                                 right: 3%;
-                                border: 1em dashed darken(@bikinicolor, 20%);
+                                border: @bikinistitch;
 
                             }
                         }
@@ -1122,7 +1124,7 @@ body {
                             width: 63%;
                             left: 12%;
                             border-radius: inherit;
-                            border: 1em dashed darken(@bikinicolor, 35%);
+                            border: @bikinistitch;
                         }
 
                           &.left {
@@ -1164,7 +1166,7 @@ body {
                         box-shadow: 0 7em 4em 1em lighten(@bikinicolor, 5%);
                     }
                     .topseam {
-                        border-bottom: 1em dashed darken(@bikinicolor, 33%);
+                        border-bottom: @bikinistitch;
                         width: 60%;
                         left: 15%;
                         height: 20%;
