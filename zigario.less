@@ -739,24 +739,35 @@ body {
                 .armfore {
                     width: 25.5%;
                     height: 156%;
-                    left: -8.5%;
+                    left: -6.5%;
+                    overflow: hidden;
                     background: #f7cac6;
                     top: 68%;
-                    box-shadow: inset 1em 17em 47em 23em #893929;
+                    box-shadow: inset -9em -4em 9em 2em #8e4538, inset 1em 17em 47em 23em #893929;
                     border-radius: ~'54% 20% 20% 49% / 27% 18% 50% 61%';
                     transform-origin: 0 0;
-                    transform: perspective(33em) rotateX(-1.4deg);
+                    transform: perspective(33em) rotateX(-1.4deg) rotate(8deg);
+                    .armshadow {
+                        top: -7%;
+                        height: 98%;
+                        width: 61%;
+                        border-radius: 50%;
+                        background: #6e2a1e;
+                        box-shadow: 0 0 8em 6em #6e2a1e;
+                        transform: rotate(-1deg);
+                        right: -60%;
+                    }
                 }
 
                 .rightarm {
-                    top: 22.5%;
+                    top: 23.5%;
                     left: 0;
                     background-color: #f4d1c3;
                     margin: auto;
                     overflow: hidden;
                     width: 19%;
                     height: 63%;
-                    transform: perspective(605em) rotateX(-1.5deg) rotate(19deg);
+                    transform: perspective(605em) rotateX(-1.5deg) rotate(17deg);
                     border-radius: ~'100% 0 89% 12% / 36% 0 15% 62%';
                     box-shadow: inset -50em 2em 36em -32em #7e2317, inset 47em -5em 41em -32em #8b2c21;
 
@@ -1793,13 +1804,22 @@ body {
                                 .vendor(border-radius, ~'100%');
                                 left: 22%;
                                 top: -80%;
-                                .vendor(box-shadow, ~'inset 0 9em 3em -2em rgba(0, 0, 0, 0.86), inset 0 0 4em 2em #193c30, inset 0 0 0 5em #b7c7ac, inset 0 0 0em 7em #2f1505');
+                                .vendor(box-shadow, ~'inset 0 9em 3em -2em rgba(0, 0, 0, 0.86), inset 0 0 4em 2em #193c30, inset 0 0 0 5em #47805f, inset 0 0 0em 7em #341704');
                                 &.leftiris {
                                     left: 37%;
                                 }
 
                                 &:after {
                                     .pseudoclear;
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    margin: auto;
+                                    width: 35%;
+                                    height: 37%;
+                                    border: 2em dotted rgba(202, 169, 88, 0.8);
+                                    border-radius: 50%;
                                 }
                             }
                         }
