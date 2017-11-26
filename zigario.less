@@ -1676,11 +1676,11 @@ body {
                     }
 
                     .eyebrow {
-                        top: 30%;
+                        top: 30.5%;
                         border-top: 6em solid #8e3900;
                         opacity: 0.4;
                         overflow: hidden;
-                        width: 35%;
+                        width: 30%;
                         height: 23%;
                         .vendor(border-radius, ~'10% 36% 0% 0 / 10% 68% 34% 0');
 
@@ -1703,13 +1703,13 @@ body {
                         }
 
                         &.left {
-                            left: 3%;
-                            .vendor(transform, ~'scaleX(-1) rotate(-21deg)');
+                            left: 5%;
+                            .vendor(transform, ~'scaleX(-1) rotate(-20deg)');
                         }
 
                         &.right {
-                            right: 3%;
-                            .vendor(transform, ~'rotate(-21deg)');
+                            right: 5%;
+                            .vendor(transform, ~'rotate(-20deg)');
                         }
                     }
 
@@ -1811,7 +1811,7 @@ right: 0%;
                             transform: rotate(-21deg);
                             bottom: -6%;
                             right: -12%;
-                            box-shadow: inset -2em 7em 4em -4em #711b1b, 1em -2em 4em -1em #863434, 0 -7em 7em 4em rgba(155,49,49,0.42);
+                            box-shadow: inset -2em 7em 4em -4em #711b1b, 1em -2em 4em -1em #863434, 3em -7em 7em 4em rgba(155,49,49,0.42);
                             background-color: #a33d3d;
                             background-image: radial-gradient(ellipse at center 56%, #f9d1c8 30%, #d29c8e 42%, #b36666);
                             border-radius: ~'50% 50% 0 0/ 90% 75% 0 0';
@@ -1819,7 +1819,7 @@ right: 0%;
                         .eyeliner {
                             .vendor(border-radius, 100% 0);
                             &.inner {
-                                bottom: 7%;
+                                bottom: -7%;
                                 left: -1%;
                                 width: 90%;
                                 height: 56%;
@@ -1872,7 +1872,7 @@ right: 0%;
                                     margin: auto;
                                     width: 35%;
                                     height: 37%;
-                                    border: 2em dotted rgba(202, 169, 88, 0.8);
+                                    border: 2em dotted rgba(243, 231, 199, 0.64);
                                     border-radius: 50%;
                                 }
                                 &:after {
@@ -1919,7 +1919,7 @@ right: 0%;
                         left: 0;
                         right: 0;
                         height: 30%;
-                        width: 27%;
+                        width: 25%;
                         top: 39%;
                         text-align: center;
 
@@ -1930,29 +1930,33 @@ right: 0%;
                             z-index: 9999;
                             position: absolute;
                             opacity: 0.3;
-                            top: 15%;
-                            bottom: 18%;
-                            .vendor(box-shadow, ~'0 0 5em 6em #a71e0a');
+                            top: -2%;
+                            width: 33%;
+                            bottom: 31%;
+                            border-radius: ~'2% 98% 0 0 / 25% 51% 0 0';
+                            box-shadow: 3em -3em 4em 0em #a71e0a, inset -3em 3em 4em 0em #a71e0a;
                         }
 
                         &:after {
-                            right: 22%;
+                            right: -4%;
+                            transform: rotate(-4deg) scaleX(-1);
                         }
 
                         &:before {
-                            left: 22%;
+                            left: -4%;
+                            transform: rotate(4deg);
                         }
 
                         .bridge {
-                            background-color: #e8b2a2;
+                            background-color: #dba494;
                             margin: auto;
-                            width: 56%;
+                            width: 46%;
                             height: 90%;
-                            .vendor(border-radius, ~'50% 50% 50% 50% / 80% 80% 15% 15%');
+                            border-radius: ~'50% 50% 50% 50% / 80% 80% 9% 9%';
                             left: 0;
                             right: 0;
                             bottom: 3%;
-                            .vendor(box-shadow, ~'0 -3em 3em 1em #e0a798, 0 5em 3em -2em #a53d3d, inset 0 -11em 6em -7em #a23223, inset 0 -17em 8em -16em #c74a3a, inset 0 0 7em 4em #daa795, inset 0 -22em 10em -3em #fde9d6, inset 0 27em 10em -10em #edd3b8');
+                            box-shadow: 0 -3em 3em 1em #e0a798, 0 5em 3em -2em #b24d4d, inset 0 -9em 6em -7em #a23223, inset 0 0 5em 3em #daa795, inset 0 -21em 10em -3em #fde9d6, inset 0 36em 10em -10em #edd3b8;
                         }
 
                         .philtrum {
@@ -1969,30 +1973,31 @@ right: 0%;
 
                         .tip {
                             width: 45%;
-                            height: 35%;
+                            height: 33%;
                             .vendor(border-radius, ~'50% 50% 35% 35% / 60% 60% 30% 30%');
-                            .vendor(box-shadow, ~'inset 0 -5em 5em 1em #b35348, inset 0 -8em 6em -6em #7C1717, inset 0 -4em 8em 4em #e8bfad, 0 4em 5em 0em #b95842');
-                            background-color: #ecc5b5;
-                            bottom: 4%;
+                            .vendor(box-shadow, ~'inset 0 -3em 5em 1em #ae564c, inset 0 -8em 6em -6em #9d5757, 0 2em 5em -1em #994d3b');
+                            background-color: #d58f80;
+                            bottom: 0%;
                             margin: auto;
 
                             &.left {
                                 right: 50%;
+                                transform: rotate(20deg);
                             }
                             &.right {
                                 left: 50%;
+                                transform: scaleX(-1) rotate(20deg);
                             }
 
                             .nostril {
-                                width: 44%;
-                                height: 5%;
-                                right: 0;
-                                left: 0;
+                                width: 53%;
+                                height: 7%;
+                                left: 37%;
                                 margin: auto;
-                                .vendor(border-radius, ~'100%');
-                                bottom: 8%;
-                                background-color: #860c0c;
-                                .vendor(box-shadow, ~'0 0 3em 1em #650e0b');
+                                border-radius: 100%;
+                                bottom: 17%;
+                                background-color: #530505;
+                                box-shadow: 0 0 3em 1em #650e0b, 2em 4em 3em 0em #f4e7d7;
 
                             }
                         }
