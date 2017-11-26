@@ -1676,14 +1676,14 @@ body {
                     }
 
                     .eyebrow {
-                        top: 31%;
+                        top: 29%;
                         border-top: 6em solid #8e3900;
                         opacity: 0.4;
                         overflow: hidden;
-                        width: 34%;
-                        height: 14%;
+                        width: 35%;
+                        height: 23%;
                         z-index: 9;
-                        .vendor(border-radius, ~'10% 54% 0% 0 / 10% 59% 34% 0');
+                        .vendor(border-radius, ~'10% 36% 0% 0 / 10% 68% 34% 0');
 
                         &:before {
                             .pseudoclear;
@@ -1704,13 +1704,13 @@ body {
                         }
 
                         &.left {
-                            left: 5%;
-                            .vendor(transform, ~'scaleX(-1) rotate(-15deg)');
+                            left: 3%;
+                            .vendor(transform, ~'scaleX(-1) rotate(-21deg)');
                         }
 
                         &.right {
-                            right: 5%;
-                            .vendor(transform, ~'rotate(-15deg)');
+                            right: 3%;
+                            .vendor(transform, ~'rotate(-21deg)');
                         }
                     }
 
@@ -1808,29 +1808,30 @@ right: 0%;
                         }
                         .eyelid {
                             width: 130%;
-                            height: 165%;
+                            height: 155%;
                             transform: rotate(-21deg);
                             bottom: 52%;
                             right: -4%;
                             box-shadow: inset -2em 7em 4em -4em #711b1b, 1em -2em 4em -1em #863434, 0 -7em 7em 6em rgba(173,90,90,0.7);
                             background-color: #a33d3d;
-                            background-image: radial-gradient(ellipse at center top, #f1d6bb, #b36666);
+                            background-image: radial-gradient(ellipse at center 56%, #f9d1c8 30%, #d29c8e 42%, #b36666);
                             border-radius: ~'50% 50% 0 0/ 90% 75% 0 0';
                         }
                         .eyeliner {
                             .vendor(border-radius, 100% 0);
-                            border-bottom: 10em solid #2f1505;
                             &.inner {
-                                bottom: -15%;
-                                right: -4%;
+                                bottom: -24%;
+                                left: -7%;
                                 width: 90%;
-                                height: 25%;
-                                transform: rotate(2deg);
+                                height: 68%;
+                                border-top: 10em solid #2a0303;
+                                transform: rotate(-6deg);
                             }
 
                             &.outer {
+                                border-bottom: 10em solid #2f1505;
                                 bottom: 47%;
-                                right: -32%;
+                                right: -24%;
                                 width: 47%;
                                 height: 159%;
                                 .vendor(transform, rotate(21deg));
@@ -1853,7 +1854,7 @@ right: 0%;
 
                             .iris {
                                 background-color: #fff;
-                                width: 46%;
+                                width: 44%;
                                 height: 117%;
                                 .vendor(border-radius, ~'100%');
                                 left: 20%;
@@ -2009,39 +2010,36 @@ right: 0%;
                     }
 
                     .mouth {
-                        top: 71.5%;
+                        top: 72.5%;
                         left: 0;
                         right: 0;
                         margin: auto;
-                        width: 39%;
+                        width: 36%;
                         height: 16%;
 
                         .toplips {
                             width: 100%;
                             height: 54%;
                             .vendor(border-radius, 0 0 50% 50%);
-                            bottom: 46%;
-                            overflow: hidden;
+                            bottom: 56%;
 
                             .toplip {
-                                .vendor(border-radius, ~'80% 80% 10% 10% / 280% 280% 10% 10%');
+                                border-radius: ~'7% 45% 10% 90% / 5% 80% 10% 96%';
                                 background-color: #cc0505;
-                                .vendor(box-shadow, ~'inset 0 6em 6em -3em #bd0505, 0 -12em 6em -6em #e6b8a3');
+                                box-shadow: inset 6em -7em 6em -6em #840606, 0 -12em 6em -6em #e6b8a3, -1em 3em 3em -2em #8a0606;
                                 top: 43%;
-                                left: 0;
-                                right: 0;
-                                width: 52%;
+                                width: 41%;
                                 margin: auto;
-                                height: 89%;
+                                height: 63%;
 
                                 &.left {
-                                    right: 35%;
-                                    .vendor(transform, rotate(-32deg));
+                                    left: 13%;
+                                    transform: rotate(-37deg);
                                 }
 
                                 &.right {
-                                    left: 35%;
-                                    .vendor(transform, rotate(32deg));
+                                    right: 13%;
+                                    transform: scaleX(-1) rotate(-37deg);
                                 }
                             }
                         }
@@ -2052,7 +2050,6 @@ right: 0%;
                             height: 48%;
                             width: 74%;
                             top: 43%;
-                            z-index: 5;
                             left: 0;
                             right: 0;
                             margin: auto;
@@ -2508,14 +2505,16 @@ right: 0%;
     left: -71%;
     .vendor(box-shadow, ~'inset 0 -8em 8em -5em #686868');
 
-    .smoke {
-        height: 739%;
-        width: 55%;
-        border-right: 12em solid rgba(255, 255, 255, 0.59);
-        bottom: 9%;
-        .vendor(border-radius, 10% 10% 90% 0);
-        right: -55%;
-        .vendor(filter, blur(10em));
-    }
+
+}
+.smoke {
+    height: 12%;
+width: 15%;
+border-right: 37em solid rgba(179, 177, 177, 0.77);
+border-bottom: 13em solid rgba(196, 196, 196, 0.85);
+top: 27%;
+border-radius: 10% 10% 90% 0;
+right: 27%;
+filter: blur(9em);
 }
 /* RETRO CIGARETTE AD*/
