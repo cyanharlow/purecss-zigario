@@ -129,7 +129,7 @@ body {
                     left: 36.5%;
                     width: 28%;
                     height: 40%;
-                    .vendor(transform, rotate(-3deg));
+                    transform: rotate(-3deg);
 
                     .side {
                         bottom: 0;
@@ -166,8 +166,8 @@ body {
                             right: 15%;
                             width: 18%;
                             height: 59%;
-                            .vendor(box-shadow, ~'inset 3em 0 5em -2em #94703e, inset 20em -8em 31em -7em rgba(33, 20, 0, 0.92), -3em 0 8em 1em #63461c, inset -2em 0 6em 2em #b58056, 2em 0 6em 2em #ab7b53');
-                            .vendor(border-radius, ~'100%');
+                            box-shadow: ~'inset 3em 0 5em -2em #94703e, inset 20em -8em 31em -7em rgba(33, 20, 0, 0.92), -3em 0 8em 1em #63461c, inset -2em 0 6em 2em #b58056, 2em 0 6em 2em #ab7b53';
+                            border-radius: ~'100%';
                         }
 
                         .strand {
@@ -177,8 +177,8 @@ body {
                             width: 70%;
                             top: -1%;
                             margin: auto;
-                            .vendor(box-shadow, ~'0 3em 4em 1em #782802, inset 0 0 2em 1em #582801');
-                            .vendor(border-radius, inherit);
+                            box-shadow: ~'0 3em 4em 1em #782802, inset 0 0 2em 1em #582801';
+                            border-radius: inherit;
                             opacity: 0.5;
 
                             &.strand1 {
@@ -487,15 +487,15 @@ body {
                         &.right {
                             width: 112%;
                             height: 22%;
-                            .vendor(border-radius, ~'2% 49% 45% 47% / 1% 9% 56% 27%');
+                            border-radius: ~'2% 49% 45% 47% / 1% 9% 56% 27%';
                             margin: auto;
                             background: #cc5a02;
                             top: 45%;
                             right: 11%;
-                            .vendor(transform, rotateZ(-90deg));
+                            transform: rotateZ(-90deg);
 
                             &:after {
-                                .vendor(box-shadow, ~'inset -4em -17em 9em -15em #fff');
+                                box-shadow: ~'inset -4em -17em 9em -15em #fff';
                             }
 
                             .strand {
@@ -507,10 +507,10 @@ body {
                         &.left {
                             width: 102%;
                             height: 32%;
-                            .vendor(border-radius, ~'30% 41% 17% 0% / 50% 66% 33% 50%');
+                            border-radius: ~'30% 41% 17% 0% / 50% 66% 33% 50%';
                             margin: auto;
                             top: 44%;
-                            .vendor(transform, ~'scaleX(-1) rotate(11deg)');
+                            transform: scaleX(-1) rotate(11deg);
                             left: 37%;
 
                             .strand {
@@ -521,9 +521,9 @@ body {
 
                     .hair {
                         &.left {
-                            .vendor(border-radius, ~'0% 23% 73% 0% / 0% 43% 53% 0%');
-                            .vendor(transform, rotateZ(80deg) scaleX(-1));
-                            .vendor(box-shadow, ~'-4em -1em 1em 0em #c48069');
+                            border-radius: ~'0% 23% 73% 0% / 0% 43% 53% 0%';
+                            transform: rotateZ(80deg) scaleX(-1);
+                            box-shadow: ~'-4em -1em 1em 0em #c48069';
                             background: #cc5b04;
                             left: 1%;
                             top: -9%;
@@ -531,7 +531,7 @@ body {
                             width: 80%;
 
                             &:after {
-                                .vendor(box-shadow, ~'inset 6em 2em 1em 0em #bf7a62, inset 7em -9em 15em 0em #7d2e01');
+                                box-shadow: ~'inset 6em 2em 1em 0em #bf7a62, inset 7em -9em 15em 0em #7d2e01';
                             }
                         }
                     }
@@ -540,7 +540,7 @@ body {
 
                         .strand {
                             background: none;
-                            .vendor(box-shadow, ~'1em 0 4em 0 #fff0d4, 2em 0 4em 0 #734d10');
+                            box-shadow: ~'1em 0 4em 0 #fff0d4, 2em 0 4em 0 #734d10';
                         }
 
                         &.left {
@@ -548,8 +548,8 @@ body {
                             top: 30%;
                             height: 27%;
                             left: 21%;
-                            .vendor(border-radius, ~'25% 28% 25% 39% / 50% 50% 50% 50%');
-                            .vendor(transform, scaleX(-1) rotateZ(46deg));
+                            border-radius: ~'25% 28% 25% 39% / 50% 50% 50% 50%';
+                            transform: scaleX(-1) rotateZ(46deg);
                         }
 
                         &.right {
@@ -557,8 +557,8 @@ body {
                             top: 68%;
                             height: 19%;
                             right: -20%;
-                            .vendor(border-radius, ~'25% 28% 25% 39% / 50% 50% 50% 50%');
-                            .vendor(transform, scaleX(-1) rotateZ(44deg));
+                            border-radius: ~'25% 28% 25% 39% / 50% 50% 50% 50%';
+                            transform: scaleX(-1) rotateZ(44deg);
                         }
 
 
@@ -567,8 +567,8 @@ body {
                             bottom: 18%;
                             height: 23%;
                             left: -37%;
-                            .vendor(border-radius, ~'25% 28% 48% 58% / 50% 50% 36% 50%');
-                            .vendor(transform, rotateZ(44deg));
+                            border-radius: ~'25% 28% 48% 58% / 50% 50% 36% 50%';
+                            transform: rotateZ(44deg);
                         }
 
                         &.lefts {
@@ -576,8 +576,8 @@ body {
                             height: 47%;
                             bottom: 12%;
                             left: 25%;
-                            .vendor(border-radius, ~'50%');
-                            .vendor(transform, scaleX(-1));
+                            border-radius: ~'50%';
+                            transform: scaleX(-1);
                         }
 
                         &.curlback {
@@ -585,7 +585,7 @@ body {
                             height: 11%;
                             bottom: 16%;
                             right: 28%;
-                            .vendor(border-radius, ~'20% 20% 20% 20% / 50% 50% 50% 50%');
+                            border-radius: ~'20% 20% 20% 20% / 50% 50% 50% 50%';
                         }
 
 
@@ -594,8 +594,8 @@ body {
                             height: 8%;
                             bottom: 9%;
                             right: 23%;
-                            .vendor(border-radius, ~'20% 20% 20% 20% / 50% 50% 50% 50%');
-                            .vendor(transform, rotate(-7deg));
+                            border-radius: ~'20% 20% 20% 20% / 50% 50% 50% 50%';
+                            transform: rotate(-7deg);
                         }
 
                         &.curlbehind {
@@ -603,8 +603,8 @@ body {
                             width: 68%;
                             bottom: 11%;
                             left: 32%;
-                            .vendor(border-radius, ~'20% 20% 20% 20% / 50% 50% 50% 50%');
-                            .vendor(transform, scaleX(-1) rotate(-19deg));
+                            border-radius: ~'20% 20% 20% 20% / 50% 50% 50% 50%';
+                            transform: scaleX(-1) rotate(-19deg);
                         }
 
 
@@ -613,8 +613,8 @@ body {
                             height: 28%;
                             top: 64%;
                             right: -7%;
-                            .vendor(transform, rotate(183deg));
-                            .vendor(border-radius, ~'50%');
+                            transform: rotate(183deg);
+                            border-radius: ~'50%';
                         }
 
                     }
@@ -625,8 +625,8 @@ body {
                             width: 78%;
                             height: 17%;
                             left: 43%;
-                            .vendor(border-radius, ~'30% 30% 30% 30% / 50% 50% 50% 50%');
-                            .vendor(transform, scaleX(-1) rotate(-10deg));
+                            border-radius: ~'30% 30% 30% 30% / 50% 50% 50% 50%';
+                            transform: scaleX(-1) rotate(-10deg);
 
                             .strand {
                                 background: radial-gradient(farthest-corner at top right, #f95402 11%, #fb860d 38%, #af3a01 57%);
@@ -638,8 +638,8 @@ body {
                             right: 38%;
                             width: 89%;
                             height: 10%;
-                            .vendor(transform, rotate(-20deg));
-                            .vendor(border-radius, ~'30% 10% 18% 80% / 50% 50% 50% 50%');
+                            transform: rotate(-20deg);
+                            border-radius: ~'30% 10% 18% 80% / 50% 50% 50% 50%';
 
                             .strand {
                                 background: radial-gradient(farthest-corner at top right, #a53701 11%, #f37101 38%, #4e2100 57%);
@@ -651,11 +651,11 @@ body {
                             right: 34%;
                             width: 72%;
                             height: 10%;
-                            .vendor(transform, rotate(-20deg));
-                            .vendor(border-radius, ~'30% 17% 20% 30% / 50% 50% 50% 50%');
+                            transform: rotate(-20deg);
+                            border-radius: ~'30% 17% 20% 30% / 50% 50% 50% 50%';
 
                             &:after {
-                                .vendor(box-shadow, ~'inset -21em 1em 9em -17em #fff');
+                                box-shadow: ~'inset -21em 1em 9em -17em #fff';
                             }
 
                             .strand {
@@ -668,15 +668,15 @@ body {
                             right: 23%;
                             width: 92%;
                             height: 32%;
-                            .vendor(transform, rotate(30deg));
-                            .vendor(border-radius, ~'43% 50% 38% 30% / 50% 50% 50% 50%');
+                            transform: rotate(30deg);
+                            border-radius: ~'43% 50% 38% 30% / 50% 50% 50% 50%';
 
                             &:after {
-                                .vendor(box-shadow, ~'inset -9em 8em 9em -7em #fff');
+                                box-shadow: ~'inset -9em 8em 9em -7em #fff';
                             }
                             .strand {
                                 background: radial-gradient(farthest-corner at top right, #6f4600, #ffeec7 20%, #7e5406 45%, #2b1c01);
-                                .vendor(box-shadow, ~'0 3em 4em 1em #463000, inset 0 0 2em 1em #664d02');
+                                box-shadow: ~'0 3em 4em 1em #463000, inset 0 0 2em 1em #664d02';
                             }
                         }
                     }
@@ -687,8 +687,8 @@ body {
                     background-color: #61261d;
                     width: 12%;
                     height: 25%;
-                    .vendor(border-radius, ~'150% 0 0 150%');
-                    .vendor(box-shadow, ~'inset -3em -6em 1em 6em #b57b65, inset 0 -16em 3em 7em #993e32, 17em 37em 9em 9em rgba(58, 20, 1, 0.57)');
+                    border-radius: ~'150% 0 0 150%';
+                    box-shadow: ~'inset -3em -6em 1em 6em #b57b65, inset 0 -16em 3em 7em #993e32, 17em 37em 9em 9em rgba(58, 20, 1, 0.57)';
 
                     &:after {
                         display:block;
@@ -699,8 +699,8 @@ body {
                         position:absolute;
                         bottom:-3%;
                         left:35%;
-                        .vendor(border-radius, ~'50%');
-                        .vendor(box-shadow, ~'inset 2em -5em 5em -1em #333, 2em 3em 3em -1em rgba(0, 0, 0, 0.45)');
+                        border-radius: ~'50%';
+                        box-shadow: ~'inset 2em -5em 5em -1em #333, 2em 3em 3em -1em rgba(0, 0, 0, 0.45)';
                     }
 
                     &.left {
@@ -709,7 +709,7 @@ body {
 
                     &.right {
                         right: -1%;
-                        .vendor(transform, ~'scaleX(-1)');
+                        transform: scaleX(-1);
                     }
                 }
             }
@@ -721,19 +721,19 @@ body {
                 width: 73%;
                 height: 90%;
                 perspective: 18em;
-                .vendor(transform, ~'rotate(9deg)');
+                transform: rotate(9deg);
 
                 .leftarm {
                     overflow: hidden;
                     width: 17%;
                     height: 55%;
-                    .vendor(transform, ~'rotate(-5deg)');
+                    transform: rotate(-5deg);
                     margin: auto;
                     background-color: #e4ac99;
                     right: 1%;
                     top: 18.5%;
-                    .vendor(border-radius, ~'0 94% 27% 41% / 0 37% 60% 25%');
-                    .vendor(box-shadow, ~'inset -5em 3em 15em -2em #fff, inset 30em 0em 47em 1em #c1695d, inset -15em -3em 33em 0em #c26355');
+                    border-radius: ~'0 94% 27% 41% / 0 37% 60% 25%';
+                    box-shadow: ~'inset -5em 3em 15em -2em #fff, inset 30em 0em 47em 1em #c1695d, inset -15em -3em 33em 0em #c26355';
 
                     .delt {
                         box-shadow: 0 0 24em 11em #f2d5c7, 6em 34em 21em 12em #e9b8a6, 27em 57em 21em 3em rgba(155, 69, 56, 0.19);
@@ -782,11 +782,11 @@ body {
 
                 .rightarm {
                     top: 23.5%;
-                    left: 0;
+                    left: 1%;
                     background-color: #e4ac99;
                     margin: auto;
                     overflow: hidden;
-                    width: 19%;
+                    width: 18%;
                     height: 63%;
                     transform: perspective(605em) rotateX(-1.5deg) rotate(17deg);
                     border-radius: ~'100% 0 89% 12% / 36% 0 15% 62%';
@@ -836,17 +836,17 @@ body {
                     height: 40%;
                     width: 65%;
                     overflow: hidden;
-                    .vendor(transform, rotateZ(-9deg));
-                    .vendor(transform-origin, 100% 0);
-                    .vendor(border-radius, ~'2% 2% 50% 50% / 10% 10% 32% 15%');
+                    transform: rotateZ(-9deg);
+                    transform-origin: 100% 0;
+                    border-radius: ~'2% 2% 50% 50% / 10% 10% 32% 15%';
 
                     .shirt {
                         width: 95%;
                         height: 130%;
                         overflow: hidden;
                         background-color: #f5c2b0;
-                        .vendor(border-radius, ~'12% 12% 50% 27% / 2% 2% 98% 98%');
-                        .vendor(box-shadow, ~'inset 0 26em 123em 40em #5c1008');
+                        border-radius: ~'12% 12% 50% 27% / 2% 2% 98% 98%';
+                        box-shadow: ~'inset 0 26em 123em 40em #5c1008';
 
                         .bottomshadow {
                             width: 80%;
@@ -868,14 +868,14 @@ body {
                             box-shadow: inset 0 -3em 2em -1em darken(@bikinicolor, 14%), inset 0 -6em 2em -1em rgba(234, 226, 226, 0.17), 0 3em 3em 0em rgba(121, 47, 34, 0.4);
 
                             .underboob {
-                                .vendor(box-shadow, ~'-11em 21em 19em 7em  rgba(0, 0, 0, 0.23)');
+                                box-shadow: ~'-11em 21em 19em 7em  rgba(0, 0, 0, 0.23)';
                                 height: 53%;
                                 width: 50%;
-                                .vendor(border-radius, ~'0 0 61% 39% / 0 0 99% 26%');
+                                border-radius: ~'0 0 61% 39% / 0 0 99% 26%';
 
                                 &.right {
                                     right: 0;
-                                    .vendor(transform, scaleX(-1));
+                                    transform: scaleX(-1);
                                 }
                             }
                           }
@@ -885,11 +885,11 @@ body {
                 .navel {
                     width: 4%;
                     height: 3%;
-                    .vendor(border-radius, 90%);
+                    border-radius: 90%;
                     background: #f5cec1;
                     left: 53%;
                     top: 85%;
-                    .vendor(box-shadow, ~'0 -4em 5em 0em #ae4d4d, 0 -26em 50em 54em #f6cfc2, 0 -22em 50em 90em #e9b5a2, 0 50em 90em 50em #b65c52, inset 0 10em 9em -6em #741a09');
+                    box-shadow: ~'0 -4em 5em 0em #ae4d4d, 0 -26em 50em 54em #f6cfc2, 0 -22em 50em 90em #e9b5a2, 0 50em 90em 50em #b65c52, inset 0 10em 9em -6em #741a09';
                 }
 
                 .upperbody {
@@ -900,7 +900,7 @@ body {
                     width: 73%;
                     height: 30%;
                     background: #480f07;
-                    .vendor(border-radius, ~'43% 43% 4% 4% / 8% 8% 70% 70%');
+                    border-radius: ~'43% 43% 4% 4% / 8% 8% 70% 70%';
 
                     .collarcenter {
                         opacity: 0.3;
@@ -909,8 +909,8 @@ body {
                         background: #fff;
                         width: 10%;
                         height: 24%;
-                        .vendor(border-radius, 50%);
-                        .vendor(box-shadow, ~'0em 14em 10em 8em #f5dfd0, inset -8em -17em 14em -9em #f4dece, inset 8em -17em 14em -9em #f4decf, inset 0em -18em 14em -3em #841706, inset 0 5em 8em -1em #d79e8c, inset 0 21em 9em -4em #f4ddcd');
+                        border-radius: 50%;
+                        box-shadow: ~'0em 14em 10em 8em #f5dfd0, inset -8em -17em 14em -9em #f4dece, inset 8em -17em 14em -9em #f4decf, inset 0em -18em 14em -3em #841706, inset 0 5em 8em -1em #d79e8c, inset 0 21em 9em -4em #f4ddcd';
                         z-index: 10;
                     }
 
@@ -922,14 +922,14 @@ body {
 
                         &.trapleft {
                             right: 58%;
-                            .vendor(transform, rotateZ(-15deg));
-                            .vendor(box-shadow, ~'inset 2em -37em 20em -25em #d79e8c, inset -16em 14em 20em -9em #a53c2d');
+                            transform: rotateZ(-15deg);
+                            box-shadow: ~'inset 2em -37em 20em -25em #d79e8c, inset -16em 14em 20em -9em #a53c2d';
                         }
 
                         &.trapright {
                             left: 58%;
-                            .vendor(transform, rotateZ(15deg));
-                            .vendor(box-shadow, ~'inset 0 15em 6em -9em rgba(255, 255, 255, 0.84), inset 24em -40em 20em -19em #d79e8c');
+                            transform: rotateZ(15deg);
+                            box-shadow: ~'inset 0 15em 6em -9em rgba(255, 255, 255, 0.84), inset 24em -40em 20em -19em #d79e8c';
                         }
                     }
 
@@ -937,7 +937,7 @@ body {
                         top: -30%;
                         width: 15%;
                         height: 20%;
-                        .vendor(border-radius, 90%);
+                        border-radius: 90%;
                         border-bottom-width: 16em;
                         border-bottom-style: solid;
                         &.left {
@@ -962,8 +962,8 @@ body {
                         width: 99.2%;
                         height: 99.5%;
                         z-index: 2;
-                        .vendor(border-radius, ~'inherit');
-                        .vendor(box-shadow, ~'inset -19em 8em 6em -13em rgba(255, 255, 255, 0.82), inset 0em 10em 21em 2em #ad4033, inset -15em 0em 55em -22em #94271a, inset 15em 0em 55em -22em #982319');
+                        border-radius: ~'inherit';
+                        box-shadow: ~'inset -19em 8em 6em -13em rgba(255, 255, 255, 0.82), inset 0em 10em 21em 2em #ad4033, inset -15em 0em 55em -22em #94271a, inset 15em 0em 55em -22em #982319';
 
                         &:before, &:after {
                             .pseudoclear;
@@ -981,8 +981,8 @@ body {
                             bottom: 0;
                             margin: auto;
                             width: 44%;
-                            .vendor(border-radius, 20% 20% 0 0);
-                            .vendor(box-shadow, ~'inset 0 -33em 10em 2em #fdece9, 0 0 33em 21em #f6d2c5');
+                            border-radius: 20% 20% 0 0;
+                            box-shadow: ~'inset 0 -33em 10em 2em #fdece9, 0 0 33em 21em #f6d2c5';
                         }
 
                         .shouldershine {
@@ -1000,8 +1000,8 @@ body {
                         }
 
                         .collarbone {
-                            .vendor(box-shadow, ~'2em 7em 28em 3em #e8ada0, inset -7em 2em 6em 2em rgba(210, 127, 107, 0.57), -14em -16em 13em 3em rgba(221, 159, 138, 0.97)');
-                            .vendor(border-radius, ~'10% 10% 10% 10% / 50% 50% 50% 50%');
+                            box-shadow: ~'2em 7em 28em 3em #e8ada0, inset -7em 2em 6em 2em rgba(210, 127, 107, 0.57), -14em -16em 13em 3em rgba(221, 159, 138, 0.97)';
+                            border-radius: ~'10% 10% 10% 10% / 50% 50% 50% 50%';
                             top: 8%;
                             background-color: #eebdb4;
                             margin: auto;
@@ -1009,7 +1009,7 @@ body {
                             height: 8%;
 
                             &:after {
-                                .vendor(box-shadow, 0 0 9em 4em #e7b5ac);
+                                box-shadow: 0 0 9em 4em #e7b5ac;
                                 content: "";
                                 display: block;
                                 position: absolute;
@@ -1018,12 +1018,12 @@ body {
                             }
 
                             &.right {
-                                .vendor(transform, rotate(-11deg));
+                                transform: rotate(-11deg);
                                 left: 52%;
                             }
 
                             &.left {
-                                .vendor(transform, rotate(11deg) scaleX(-1));
+                                transform: rotate(11deg) scaleX(-1);
                                 right: 52%;
                             }
                         }
@@ -1033,8 +1033,8 @@ body {
                             width: 45%;
                             height: 108%;
                             top: 49%;
-                            .vendor(border-radius, ~'59% 41% 0 0 / 42% 42% 0 0');
-                            .vendor(box-shadow, ~'-14em -4em 1em -13em maroon, inset -29em -20em 32em -24em #d89382, 10em 10em 12em -2em #d6907f, inset 44em -68em 35em -25em #b13e2e, -20em 25em 27em 7em #8a0d0d, -67em -16em 29em 7em #eabbae, inset 0em 2em 54em 29em #e8b39f, -2em -11em 16em 6em #e8b3a0');
+                            border-radius: ~'59% 41% 0 0 / 42% 42% 0 0';
+                            box-shadow: ~'-14em -4em 1em -13em maroon, inset -29em -20em 32em -24em #d89382, 10em 10em 12em -2em #d6907f, inset 44em -68em 35em -25em #b13e2e, -20em 25em 27em 7em #8a0d0d, -67em -16em 29em 7em #eabbae, inset 0em 2em 54em 29em #e8b39f, -2em -11em 16em 6em #e8b3a0';
 
                             &:after {
                                 .pseudoclear;
@@ -1043,10 +1043,10 @@ body {
                                 left: 4%;
                                 width: 1em;
                                 height: 22%;
-                                .vendor(transform-origin, 0 0);
-                                .vendor(transform, rotate(20deg));
-                                .vendor(border-radius, 100%);
-                                .vendor(box-shadow, ~'-1em -6em 8em 1em #b54544, -5em 0 24em 16em rgba(173, 73, 51, 0.19)');
+                                transform-origin: 0 0;
+                                transform: rotate(20deg);
+                                border-radius: 100%;
+                                box-shadow: ~'-1em -6em 8em 1em #b54544, -5em 0 24em 16em rgba(173, 73, 51, 0.19)';
                             }
 
                             &.left {
@@ -1055,7 +1055,7 @@ body {
 
                             &.right {
                                 left: 51%;
-                                .vendor(transform, ~'scaleX(-1)');
+                                transform: scaleX(-1);
                             }
                         }
 
@@ -1067,8 +1067,8 @@ body {
                                 height: 72%;
                                 left: 9%;
                                 top: 22%;
-                                .vendor(border-radius, 50%);
-                                .vendor(box-shadow, ~'-2em -2em 3em 0em rgba(79, 138, 245, 0.05), inset 2em 2em 3em 0em rgba(79, 138, 245, 0.05)');
+                                border-radius: 50%;
+                                box-shadow: ~'-2em -2em 3em 0em rgba(79, 138, 245, 0.05), inset 2em 2em 3em 0em rgba(79, 138, 245, 0.05)';
                             }
 
                             &.vein1 {
@@ -1076,8 +1076,8 @@ body {
                                 height: 72%;
                                 left: 23%;
                                 top: 53%;
-                                .vendor(border-radius, 80% 0 0 0);
-                                .vendor(box-shadow, ~'-2em -2em 3em 0em rgba(79, 138, 245, 0.05), inset 2em 2em 3em 0em rgba(79, 138, 245, 0.05)');
+                                border-radius: 80% 0 0 0;
+                                box-shadow: ~'-2em -2em 3em 0em rgba(79, 138, 245, 0.05), inset 2em 2em 3em 0em rgba(79, 138, 245, 0.05)';
                             }
 
 
@@ -1087,8 +1087,8 @@ body {
                                 left: 36%;
                                 top: 73%;
                                 transform: rotate(53deg);
-                                .vendor(border-radius, 0 0 0 79%);
-                                .vendor(box-shadow, ~'-2em 2em 3em 0em rgba(79, 138, 245, 0.05), inset 2em -2em 3em 0em rgba(79, 138, 245, 0.05)');
+                                border-radius: 0 0 0 79%;
+                                box-shadow: ~'-2em 2em 3em 0em rgba(79, 138, 245, 0.05), inset 2em -2em 3em 0em rgba(79, 138, 245, 0.05)';
                             }
 
                             &.vein3 {
@@ -1097,8 +1097,8 @@ body {
                                 left: 54%;
                                 top: 78%;
                                 transform: rotate(70deg);
-                                .vendor(border-radius, 0 80% 0 75%);
-                                .vendor(box-shadow, ~'-2em 2em 3em 0em rgba(79, 138, 245, 0.05), inset 2em -2em 3em 0em rgba(79, 138, 245, 0.05)');
+                                border-radius: 0 80% 0 75%;
+                                box-shadow: ~'-2em 2em 3em 0em rgba(79, 138, 245, 0.05), inset 2em -2em 3em 0em rgba(79, 138, 245, 0.05)';
                             }
 
                             &.vein4 {
@@ -1106,16 +1106,16 @@ body {
                                 width: 37%;
                                 height: 86%;
                                 top: -43%;
-                                .vendor(transform, rotate(44deg));
-                                .vendor(border-radius, 38%);
-                                .vendor(box-shadow, ~'0 0 3em 2em rgba(79, 138, 245, 0.05), inset 0 0 3em 2em rgba(79, 138, 245, 0.05)');
+                                transform: rotate(44deg);
+                                border-radius: 38%;
+                                box-shadow: ~'0 0 3em 2em rgba(79, 138, 245, 0.05), inset 0 0 3em 2em rgba(79, 138, 245, 0.05)';
                             }
                         }
 
                         .mole {
                             left: 61%;
                             top: 82%;
-                            .vendor(box-shadow, ~'0 0 2em 1em #a5542a');
+                            box-shadow: ~'0 0 2em 1em #a5542a';
                         }
                     }
                 }
@@ -1128,7 +1128,7 @@ body {
                         width: 35%;
                         height: 21%;
                         top: 43%;
-                        .vendor(border-radius, ~'5% 95% 67% 27% / 5% 26% 68% 95%');
+                        border-radius: ~'5% 95% 67% 27% / 5% 26% 68% 95%';
                         box-shadow: inset 22em -2em 18em -8em rgba(0, 0, 0, 0.3), inset -3em -16em 7em -14em fade(darken(@bikinicolor, 30%), 30%), inset 0em 27em 7em -23em lighten(@bikinicolor, 20%);
                         background-image: radial-gradient(ellipse farthest-side at center 22%, lighten(@bikinicolor, 30%), darken(@bikinicolor, 8%));
 
@@ -1138,7 +1138,7 @@ body {
 
                         &.right {
                             right: 15%;
-                            .vendor(transform, scaleX(-1));
+                            transform: scaleX(-1);
 
                         }
 
@@ -1191,14 +1191,14 @@ body {
 
                           &.left {
                             left: 12%;
-                              .vendor(border-radius, ~'70% 30% 5% 95% / 7% 3% 72% 83%');
+                              border-radius: ~'70% 30% 5% 95% / 7% 3% 72% 83%';
 
                           }
 
                           &.right {
                               right: 13%;
                               top: 18.7%;
-                              .vendor(border-radius, ~'30% 70% 95% 5% / 3% 5% 83% 72%');
+                              border-radius: ~'30% 70% 95% 5% / 3% 5% 83% 72%';
                           }
 
                       }
@@ -1215,8 +1215,8 @@ body {
                     width: 94%;
                     overflow: hidden;
                     background-image: radial-gradient(ellipse at center 14%, lighten(@bikinicolor, 15%), darken(@bikinicolor, 3%) 35%);
-                    .vendor(transform, rotate(-6deg));
-                    .vendor(border-radius, ~'29% 30% 0% 0% / 100% 100% 0% 0%');
+                    transform: rotate(-6deg);
+                    border-radius: ~'29% 30% 0% 0% / 100% 100% 0% 0%';
 
                     .topshadow {
                         width: 52%;
@@ -1259,14 +1259,14 @@ body {
                     &.behind{
                         top: 47%;
                         left: 40.5%;
-                        .vendor(transform, rotate(80deg));
+                        transform: rotate(80deg);
 
                     }
 
                     &.front {
                         top: 22%;
                         right: 13%;
-                        .vendor(transform, rotate(-26deg));
+                        transform: rotate(-26deg);
                     }
 
                     .forearmin {
@@ -1277,9 +1277,9 @@ body {
                             width: 63%;
                             height: 106%;
                             background-color: #d8a396;
-                            .vendor(transform, rotateZ(-13deg));
-                            .vendor(border-radius, ~'37% 17% 35% 2% / 99% 1% 26% 0%');
-                            .vendor(box-shadow, ~'inset 28em -18em 16em -23em #c36156, inset -37em 4em 40em -25em #981c0d, 11em -4em 10em -3em rgba(43, 0, 0, 0.75)');
+                            transform: rotateZ(-13deg);
+                            border-radius: ~'37% 17% 35% 2% / 99% 1% 26% 0%';
+                            box-shadow: ~'inset 28em -18em 16em -23em #c36156, inset -37em 4em 40em -25em #981c0d, 11em -4em 10em -3em rgba(43, 0, 0, 0.75)';
                         }
 
                         &.front {
@@ -1288,9 +1288,9 @@ body {
                             width: 63%;
                             height: 85%;
                             background-color: #f5c1ad;
-                            .vendor(transform, rotateZ(15deg));
-                            .vendor(border-radius, ~'3% 99% 14% 77% / 42% 85% 5% 31%');
-                            .vendor(box-shadow, ~'inset 2em -20em 17em -12em #841b1b, inset 18em -11em 18em -10em #ac563e, inset -29em -9em 15em -15em #e9baa9');
+                            transform: rotateZ(15deg);
+                            border-radius: ~'3% 99% 14% 77% / 42% 85% 5% 31%';
+                            box-shadow: ~'inset 2em -20em 17em -12em #841b1b, inset 18em -11em 18em -10em #ac563e, inset -29em -9em 15em -15em #e9baa9';
                         }
 
                     }
@@ -1303,9 +1303,9 @@ body {
                             left: 2%;
                             height: 91%;
                             background-color: #d89c90;
-                            .vendor(transform, rotateZ(2deg));
-                            .vendor(border-radius, ~'0 95% 0 0 / 0 90% 0 0');
-                            .vendor(box-shadow, ~'inset -9em -11em 13em 0 #da9e92, inset 30em -18em 20em -20em #c36156');
+                            transform: rotateZ(2deg);
+                            border-radius: ~'0 95% 0 0 / 0 90% 0 0';
+                            box-shadow: ~'inset -9em -11em 13em 0 #da9e92, inset 30em -18em 20em -20em #c36156';
                         }
 
                         &.front {
@@ -1314,8 +1314,8 @@ body {
                             right: 7%;
                             height: 87%;
                             background-color: #f5c1ad;
-                            .vendor(border-radius, ~'93% 5% 85% 6% / 90% 1% 38% 3%');
-                            .vendor(box-shadow, ~'inset 2em -20em 17em -12em #801919, inset -37em -13em 25em -28em #c06f58');
+                            border-radius: ~'93% 5% 85% 6% / 90% 1% 38% 3%';
+                            box-shadow: ~'inset 2em -20em 17em -12em #801919, inset -37em -13em 25em -28em #c06f58';
                         }
 
                     }
@@ -1328,8 +1328,8 @@ body {
                         height: 100%;
                         left: 24%;
                         top: 0;
-                        .vendor(box-shadow, 0 0 17em 2em #f7e6e3);
-                        .vendor(transform, rotate(-8deg));
+                        box-shadow: 0 0 17em 2em #f7e6e3;
+                        transform: rotate(-8deg);
                     }
 
                     .emptysleeve {
@@ -1337,8 +1337,8 @@ body {
                         width: 150%;
                         height: 101%;
                         overflow: hidden;
-                        .vendor(perspective, 20em);
-                        .vendor(border-radius, ~'0 0 50% 50% / 0 0 38% 24%');
+                        perspective: 20em;
+                        border-radius: ~'0 0 50% 50% / 0 0 38% 24%';
 
                         &.behind {
                             left: -32%;
@@ -1355,14 +1355,14 @@ body {
                         right: -55%;
                         width: 63%;
                         height: 28%;
-                        .vendor(transform, ~'rotate(43deg)');
+                        transform: rotate(43deg);
 
                         .wrist {
-                            .vendor(border-radius, ~'10% 0 0 61% / 10% 0 0 91%');
+                            border-radius: ~'10% 0 0 61% / 10% 0 0 91%';
                             width: 77%;
                             height: 40%;
                             border-left: 3px solid #be7f6c;
-                            .vendor(transform, ~'rotateZ(-2deg)');
+                            transform: rotateZ(-2deg);
                             right: -85%;
                             bottom: -5%;
                         }
@@ -1372,18 +1372,18 @@ body {
                             width: 84%;
                             height: 100%;
                             border-left: 1em solid #b75239;
-                            .vendor(transform, rotateZ(-3deg));
-                            .vendor(transform-origin, 100% 0);
-                            .vendor(border-radius, ~'50% 50% 50% 50% / 80% 80% 20% 20%');
+                            transform: rotateZ(-3deg);
+                            transform-origin: 100% 0;
+                            border-radius: ~'50% 50% 50% 50% / 80% 80% 20% 20%';
 
                             &.front{
                                 background: #ffcdbd;
-                                .vendor(box-shadow, ~'inset 1em -18em 26em -6em #d08872, inset -9em 0em 5em -7em #fff5f4, inset -17em -11em 13em -7em #d88c7e, inset 13em -6em 20em -5em #be605a');
+                                box-shadow: ~'inset 1em -18em 26em -6em #d08872, inset -9em 0em 5em -7em #fff5f4, inset -17em -11em 13em -7em #d88c7e, inset 13em -6em 20em -5em #be605a';
                             }
 
                             &.behind{
                                 background: #e09780;
-                                .vendor(box-shadow, ~'inset 11em -10em 9em -6em #a5483a, inset -17em -11em 13em -7em #b96d60, inset 13em -6em 20em -5em #be605a, 0 14em 8em -6em #a64a3b');
+                                box-shadow: ~'inset 11em -10em 9em -6em #a5483a, inset -17em -11em 13em -7em #b96d60, inset 13em -6em 20em -5em #be605a, 0 14em 8em -6em #a64a3b';
 
                             }
 
@@ -1391,7 +1391,7 @@ body {
 
 
                         .segment {
-                            .vendor(box-shadow, ~'inset -9em 0em 5em -7em #fff5f4, inset -11em 0 5em -5em #cd8072, inset 9em 0 5em -5em #be605a');
+                            box-shadow: ~'inset -9em 0em 5em -7em #fff5f4, inset -11em 0 5em -5em #cd8072, inset 9em 0 5em -5em #be605a';
                             background: #f6b6a3;
 
                             &.segment1 {
@@ -1399,7 +1399,7 @@ body {
                                 right: 1%;
                                 width: 39%;
                                 height: 56%;
-                                .vendor(border-radius, ~'40% 15% 39% 40% / 40% 15% 12% 29%');
+                                border-radius: ~'40% 15% 39% 40% / 40% 15% 12% 29%';
                             }
 
                             &.segment2 {
@@ -1410,7 +1410,7 @@ body {
                                 height: 45%;
                                 overflow: hidden;
                                 z-index: 99999999999999999;
-                                .vendor(border-radius, ~'40% 15% 15% 40% / 40% 15% 14% 32%');
+                                border-radius: ~'40% 15% 15% 40% / 40% 15% 14% 32%';
                             }
 
                             &.segment3 {
@@ -1421,7 +1421,7 @@ body {
                                 border-top: 2em solid #842929;
                                 border-left: 2em solid #9e3232;
                                 z-index: 99999999999999999;
-                                .vendor(border-radius, ~'80% 20% 15% 40% / 37% 10% 15% 20%');
+                                border-radius: ~'80% 20% 15% 40% / 37% 10% 15% 20%';
 
                                 &:after {
                                     .pseudoclear;
@@ -1430,8 +1430,8 @@ body {
                                     background-color: #d00000;
                                     width: 50%;
                                     height: 70%;
-                                    .vendor(box-shadow, ~'inset -5em 0em 2em -3em #ff96af, inset 0 -7em 5em -3em #870000, -2em 3em 3em 0em #c25858, -4em 4em 2em -1em #fdd3d3');
-                                    .vendor(border-radius, ~'90% 6% 16% 89% / 40% 10% 16% 64%');
+                                    box-shadow: ~'inset -5em 0em 2em -3em #ff96af, inset 0 -7em 5em -3em #870000, -2em 3em 3em 0em #c25858, -4em 4em 2em -1em #fdd3d3';
+                                    border-radius: ~'90% 6% 16% 89% / 40% 10% 16% 64%';
                                 }
                             }
                         }
@@ -1441,8 +1441,8 @@ body {
                             left: -2%;
                             width: 98%;
                             height: 73%;
-                            .vendor(border-radius, ~'24% 49% 80% 22% / 85% 30% 60% 22%');
-                            .vendor(transform, ~'rotate(-24deg)');
+                            border-radius: ~'24% 49% 80% 22% / 85% 30% 60% 22%';
+                            transform: rotate(-24deg);
                             z-index: -8888888;
 
                             .flex {
@@ -1450,12 +1450,12 @@ body {
                                 width: 102%;
                                 height: 100%;
                                 border: 1em solid #9e352e;
-                                .vendor(border-radius, inherit);
-                                .vendor(box-shadow, ~'inset 3em -8em 15em 7em #bd6952, inset 8em -17em 13em 4em #f3e3d4, 0 22em 8em -8em #cf8672');
+                                border-radius: inherit;
+                                box-shadow: ~'inset 3em -8em 15em 7em #bd6952, inset 8em -17em 13em 4em #f3e3d4, 0 22em 8em -8em #cf8672';
                             }
 
                             .segment {
-                                .vendor(box-shadow, ~'inset -9em 0em 5em -7em #fff5f4, inset -18em 0 8em -9em #c96855, inset 12em 0 8em -10em #b4594e');
+                                box-shadow: ~'inset -9em 0em 5em -7em #fff5f4, inset -18em 0 8em -9em #c96855, inset 12em 0 8em -10em #b4594e';
                                 background: #d1907c;
 
                                 &.segment1 {
@@ -1463,8 +1463,8 @@ body {
                                     left: 28%;
                                     width: 38%;
                                     height: 46%;
-                                    .vendor(transform, rotate(9deg));
-                                    .vendor(border-radius, ~'50% 50% 0 0');
+                                    transform: rotate(9deg);
+                                    border-radius: ~'50% 50% 0 0';
                                 }
 
                                 &.segment2 {
@@ -1472,8 +1472,8 @@ body {
                                     left: -7%;
                                     width: 52%;
                                     height: 33%;
-                                    .vendor(transform, rotateZ(7deg));
-                                    .vendor(border-radius, ~'27%');
+                                    transform: rotateZ(7deg);
+                                    border-radius: ~'27%';
                                 }
                             }
                         }
@@ -1481,22 +1481,22 @@ body {
                         .finger {
                             width: 100%;
                             height: 72%;
-                            .vendor(transform, ~'rotate(-27deg)');
+                            transform: rotate(-27deg);
                             bottom: 73%;
                             right: 21%;
 
                             &.finger1 {
-                                .vendor(transform, ~'rotate(-52deg)');
+                                transform: rotate(-52deg);
                                 height: 66%;
                                 right: 49%;
                                 bottom: 58%;
 
                                 .segment1 {
-                                    .vendor(box-shadow, ~'inset -9em 0em 5em -7em #fff5f4, inset -11em 6em 5em -6em #cd8072, inset 9em 7em 5em -7em #be605a');
+                                    box-shadow: ~'inset -9em 0em 5em -7em #fff5f4, inset -11em 6em 5em -6em #cd8072, inset 9em 7em 5em -7em #be605a';
                                 }
 
                                 .segment3 {
-                                    .vendor(transform, ~'rotate(-31deg)');
+                                    transform: rotate(-31deg);
                                     bottom: 89%;
                                 }
                             }
@@ -1509,13 +1509,13 @@ body {
                             &.finger3 {
                                 right: 45%;
                                 height: 106%;
-                                .vendor(transform, ~'rotate(-15deg)');
+                                transform: rotate(-15deg);
                             }
 
                             &.finger4 {
                                 right: 62%;
                                 height: 97%;
-                                .vendor(transform, ~'rotate(-35deg)');
+                                transform: rotate(-35deg);
                                 bottom: 65%;
 
                                 .segment2 {
@@ -1525,23 +1525,23 @@ body {
                                         left:-20%;
                                         width: 120%;
                                         opacity: 0.5;
-                                        .vendor(transform, rotate(45deg));
-                                        .vendor(box-shadow, 0 0 2em 3em #821818);
+                                        transform: rotate(45deg);
+                                        box-shadow: 0 0 2em 3em #821818;
                                     }
                                 }
                             }
 
                             .segment1 {
-                                .vendor(transform, ~'rotate(7deg)');
+                                transform: rotate(7deg);
                             }
 
                             .segment2 {
-                                .vendor(transform, ~'rotate(-10deg)');
+                                transform: rotate(-10deg);
                             }
 
                             .segment3 {
-                                .vendor(transform, ~'rotate(-17deg)');
-                                .vendor(transform-origin, ~'100% 100%');
+                                transform: rotate(-17deg);
+                                transform-origin: 100% 100%;
                             }
                         }
                     }
@@ -1556,9 +1556,9 @@ body {
                     width: 24.5%;
                     height: 22%;
                     z-index: 9;
-                    .vendor(transform, ~'rotate(-5deg)');
-                    .vendor(border-radius, ~'0 0 50% 50% / 0 0 30% 32%');
-                    .vendor(box-shadow, ~'0 9em 8em -6em #d79e8b, inset 0 -26em 24em -9em #d79e8c, inset -19em -4em 6em -13em rgba(255, 255, 255, 0.86), inset 18em 59em 23em 0em #9c3125, inset -14em 59em 24em -1em #a34135, inset 0 105em 42em -35em #DA6D6D');
+                    transform: rotate(-5deg);
+                    border-radius: ~'0 0 50% 50% / 0 0 30% 32%';
+                    box-shadow: ~'0 9em 8em -6em #d79e8b, inset 0 -26em 24em -9em #d79e8c, inset -19em -4em 6em -13em rgba(255, 255, 255, 0.86), inset 18em 59em 23em 0em #9c3125, inset -14em 59em 24em -1em #a34135, inset 0 105em 42em -35em #DA6D6D';
 
                     &:before {
                         .pseudoclear;
@@ -1568,9 +1568,9 @@ body {
                         top: 2%;
                         opacity: 0.7;
                         height: 70%;
-                        .vendor(border-radius, 20% 20% 20% 50%);
-                        .vendor(box-shadow, ~'0 0em 6em 7em #671608');
-                        .vendor(transform, ~'rotate(-56deg)');
+                        border-radius: 20% 20% 20% 50%;
+                        box-shadow: ~'0 0em 6em 7em #671608';
+                        transform: rotate(-56deg);
                     }
                 }
 
@@ -1621,9 +1621,9 @@ body {
                 background-color: #177301;
                 width: 25%;
                 height: 35%;
-                .vendor(transform, ~'rotate(-3deg)');
-                .vendor(box-shadow, ~'-14em -7em 6em -11em rgba(105, 39, 0, 0.84), -12em -26em 14em -17em rgba(251, 171, 85, 0.47)');
-                .vendor(border-radius, ~'50% 17% 50% 50% / 28% 39% 57% 57%');
+                transform: rotate(-3deg);
+                box-shadow: ~'-14em -7em 6em -11em rgba(105, 39, 0, 0.84), -12em -26em 14em -17em rgba(251, 171, 85, 0.47)';
+                border-radius: ~'50% 17% 50% 50% / 28% 39% 57% 57%';
 
                 .face {
                     position: relative;
@@ -1633,8 +1633,8 @@ body {
                     overflow: hidden;
                     width: 100%;
                     height: 100%;
-                    .vendor(box-shadow, ~'inset 9em 1em 6em -6em rgba(103, 30, 14, 0.63), inset 0 72em 26em -26em rgba(210, 147, 124, 0.57), inset -19em -9em 6em -19em rgba(255, 255, 255, 0.85), inset -10em -4em 8em -6em #731804, inset 0 -16em 6em -12em rgba(111, 7, 5, 0.33), inset -22em -8em 6em -10em rgba(141, 51, 28, 0.29), inset 20em 1em 6em -10em rgba(141, 51, 28, 0.33), inset 0em -1em 10em -1em #943b1e, inset 0 -112em 16em -68em #c77563, inset 0 -76em 16em -28em #af3c2e, inset 0 -7em 51em 7em #a13f23');
-                    .vendor(border-radius, inherit);
+                    box-shadow: ~'inset 9em 1em 6em -6em rgba(103, 30, 14, 0.63), inset 0 72em 26em -26em rgba(210, 147, 124, 0.57), inset -19em -9em 6em -19em rgba(255, 255, 255, 0.85), inset -10em -4em 8em -6em #731804, inset 0 -16em 6em -12em rgba(111, 7, 5, 0.33), inset -22em -8em 6em -10em rgba(141, 51, 28, 0.29), inset 20em 1em 6em -10em rgba(141, 51, 28, 0.33), inset 0em -1em 10em -1em #943b1e, inset 0 -112em 16em -68em #c77563, inset 0 -76em 16em -28em #af3c2e, inset 0 -7em 51em 7em #a13f23';
+                    border-radius: inherit;
 
                     &:before,
                     &:after {
@@ -1643,7 +1643,7 @@ body {
                         position: absolute;
                         top: 16%;
                         height: 16%;
-                        .vendor(box-shadow, 0 0 20em 10em rgba(125, 30, 6, 0.53));
+                        box-shadow: 0 0 20em 10em rgba(125, 30, 6, 0.53);
                     }
 
                     &:before {
@@ -1672,7 +1672,7 @@ body {
                         margin: auto;
                         top:18%;
                         width: 15%;
-                        .vendor(box-shadow, ~'0 0 46em 21em #fbf3e5, 0 -38em 46em 11em #fbf3e5');
+                        box-shadow: ~'0 0 46em 21em #fbf3e5, 0 -38em 46em 11em #fbf3e5';
                     }
 
                     .eyebrow {
@@ -1683,20 +1683,20 @@ body {
                         overflow: hidden;
                         width: 30%;
                         height: 23%;
-                        .vendor(border-radius, ~'23% 36% 0% 0 / 10% 45% 34% 0');
+                        border-radius: ~'23% 36% 0% 0 / 10% 45% 34% 0';
 
                         &:before {
                             .pseudoclear;
-                            .vendor(box-shadow, 0 0 7em 4em #ffdbcd);
+                            box-shadow: 0 0 7em 4em #ffdbcd;
                             top: 7%;
                             right: 25%;
                             width: 20%;
-                            .vendor(transform, rotate(35deg));
+                            transform: rotate(35deg);
                         }
 
                         &:after {
                             .pseudoclear;
-                            .vendor(box-shadow, 0 0 7em 2em #8e2f1e);
+                            box-shadow: 0 0 7em 2em #8e2f1e;
                             top: 1%;
                             left: 5%;
                             width: 30%;
@@ -1705,12 +1705,12 @@ body {
 
                         &.left {
                             left: 5%;
-                            .vendor(transform, ~'scaleX(-1) rotate(-20deg)');
+                            transform: scaleX(-1) rotate(-20deg);
                         }
 
                         &.right {
                             right: 5%;
-                            .vendor(transform, ~'rotate(-20deg)');
+                            transform: rotate(-20deg);
                         }
                     }
 
@@ -1720,22 +1720,22 @@ body {
                         width: 24%;
                         height: 5%;
                         z-index: 3;
-                        .vendor(border-radius, ~'90% 0% 90% 0% / 95% 5% 95% 5%');
-                        .vendor(box-shadow, ~'4em 0em 10em -1em #380202, 2em 8em 9em -1em #b25846, 0em 34em 18em -1em rgba(251, 243, 229, 0.49)');
+                        border-radius: ~'90% 0% 90% 0% / 95% 5% 95% 5%';
+                        box-shadow: ~'1em 6em 8em -1em #9d4040, 5em -9em 7em 3em #741e0d, 0em 34em 18em -1em rgba(251, 243, 229, 0.49)';
 
                         .lash {
                             border-color: #2f1505;
                             border-right-style: solid;
                             width: 17%;
-                            .vendor(transform, ~'rotate(78deg)');
-                            .vendor(border-radius, 0 100%);
+                            transform: rotate(78deg);
+                            border-radius: 0 100%;
 
                             &.top {
                                 bottom: 57%;
                                 border-width: 2em;
                                 height: 86%;
-                                .vendor(transform, ~'rotate(62deg)');
-                                .vendor(border-radius, 0 100%);
+                                transform: rotate(62deg);
+                                border-radius: 0 100%;
 
                                 &.lash1 {
                                     bottom: 100%;
@@ -1772,8 +1772,8 @@ body {
                                 border-width: 1em;
                                 border-color: #5d2005;
                                 height: 60%;
-                                .vendor(transform, ~'rotate(-81deg)');
-                                .vendor(border-radius, 100% 0);
+                                transform: rotate(-81deg);
+                                border-radius: 100% 0;
 
                                 &.lash1 {
                                     top: 6%;
@@ -1818,7 +1818,7 @@ right: 0%;
                             border-radius: ~'50% 50% 0 0/ 90% 75% 0 0';
                         }
                         .eyeliner {
-                            .vendor(border-radius, 100% 0);
+                            border-radius: 100% 0;
                             &.inner {
                                 bottom: 1%;
                                 left: -5%;
@@ -1834,7 +1834,7 @@ right: 0%;
                                 right: -9%;
                                 width: 47%;
                                 height: 159%;
-                                .vendor(transform, rotate(21deg));
+                                transform: rotate(21deg);
                             }
                         }
 
@@ -1845,17 +1845,17 @@ right: 0%;
                             height: 141%;
                             background-color: #8c3d3d;
                             background-image: radial-gradient(ellipse farthest-side at 275% 83%, transparent 99%, rgba(54, 4, 4, 0.56) 104%),radial-gradient(circle at 41% 30%, #dbb5a7 33%, #8d3434 76%);
-                            .vendor(box-shadow, ~'-5em 6em 0em -4em #dba08f, 3em 2em 0em -1em #bc6474, -8em 5em 3em -3em rgba(225, 202, 181, 0.56), inset -4em 2em 4em -2em #751111');
-                            .vendor(border-radius, inherit);
+                            box-shadow: ~'-5em 6em 0em -4em #dba08f, 3em 2em 0em -1em #bc6474, -8em 5em 3em -3em rgba(225, 202, 181, 0.56), inset -4em 2em 4em -2em #751111';
+                            border-radius: inherit;
 
                             .iris {
                                 background-color: #fff;
                                 width: 40%;
                                 height: 86%;
-                                .vendor(border-radius, ~'100%');
+                                border-radius: ~'100%';
                                 left: 44%;
                                 top: -11%;
-                                .vendor(box-shadow, ~'inset 0 9em 3em -2em rgba(32, 32, 32, 0.86), inset 0 0 1em 1em #505a57, inset 0 0 0 3em #8ba897, inset 0 0 0em 6em #341704');
+                                box-shadow: ~'inset 0 9em 3em -2em rgba(32, 32, 32, 0.86), inset 0 0 1em 1em #505a57, inset 0 0 0 3em #8ba897, inset 0 0 0em 6em #341704';
                                 &.leftiris {
                                     left: 16%;
                                     top: 4%;
@@ -1884,23 +1884,23 @@ right: 0%;
                         }
 
                         &.eleft {
-                            .vendor(transform, scaleX(-1) rotate(12deg));
+                            transform: scaleX(-1) rotate(12deg);
                             left: 14.5%;
                         }
 
                         &.right {
-                            .vendor(transform, rotate(12deg));
+                            transform: rotate(12deg);
                             right: 14.5%;
                         }
                     }
 
                     .cheekbone {
                         top: 54%;
-                        .vendor(box-shadow, 0 0 15em 12em rgba(255, 255, 255, 0.83));
+                        box-shadow: 0 0 15em 12em rgba(255, 255, 255, 0.83);
                         width: 15%;
                         opacity: 0.4;
                         z-index: 2;
-                        .vendor(transform, rotateZ(33deg));
+                        transform: rotateZ(33deg);
 
                         &.left {
                             left: 14%;
@@ -1908,7 +1908,7 @@ right: 0%;
 
                         &.right {
                             right: 14%;
-                            .vendor(transform, scaleX(-1) rotateZ(33deg));
+                            transform: scaleX(-1) rotateZ(33deg);
                         }
                     }
 
@@ -1917,7 +1917,7 @@ right: 0%;
                         left: 0;
                         right: 0;
                         height: 30%;
-                        width: 26%;
+                        width: 24%;
                         top: 39%;
                         text-align: center;
 
@@ -1958,11 +1958,11 @@ right: 0%;
                         }
 
                         .philtrum {
-                            .vendor(border-radius, ~'30%');
+                            border-radius: ~'30%';
                             height: 20%;
                             width: 20%;
                             background: #ad543c;
-                            .vendor(box-shadow, ~'inset 0 -13em 5em -9em #dfb1a7, inset 0 0 3em 0em #ce786a, 0 0 3em 2em #d78173, 0 12em 6em 7em #f5e1cb');
+                            box-shadow: ~'inset 0 -13em 5em -9em #dfb1a7, inset 0 0 3em 0em #ce786a, 0 0 3em 2em #d78173, 0 12em 6em 7em #f5e1cb';
                             left: 0;
                             right: 0;
                             margin: auto;
@@ -1972,8 +1972,8 @@ right: 0%;
                         .tip {
                             width: 45%;
                             height: 33%;
-                            .vendor(border-radius, ~'50% 50% 35% 35% / 39% 60% 30% 56%');
-                            .vendor(box-shadow, ~'inset 0 -3em 5em 1em #ae564c, inset 0 -8em 6em -6em #9d5757, 0 2em 5em -1em #994d3b');
+                            border-radius: ~'50% 50% 35% 35% / 39% 60% 30% 56%';
+                            box-shadow: ~'inset 0 -3em 5em 1em #ae564c, inset 0 -8em 6em -6em #9d5757, 0 2em 5em -1em #994d3b';
                             background-color: #d58f80;
                             bottom: 0%;
                             margin: auto;
@@ -2006,7 +2006,7 @@ right: 0%;
                             right: 0;
                             margin: auto;
                             width: 72%;
-                            .vendor(box-shadow, 0 0 11em 5em rgba(239, 140, 129, 0.24));
+                            box-shadow: 0 0 11em 5em rgba(239, 140, 129, 0.24);
                         }
                     }
 
@@ -2015,25 +2015,37 @@ right: 0%;
                         left: 0;
                         right: 0;
                         margin: auto;
-                        width: 32%;
+                        width: 31%;
                         height: 16%;
 
                         .hole {
                             background: #490202;
-                            box-shadow: 0 0 3em 1em #4d0202;
-                            width: 21%;
-                            height: 7%;
+                            box-shadow: 0 0 2em 1em #4d0202;
+                            width: 13%;
+                            height: 4%;
                             border-radius: 50%;
                             margin: auto;
                             left: 0;
                             right: 0;
-                            top: 41%;
+                            top: 45%;
                         }
                         .toplips {
                             width: 100%;
                             height: 54%;
-                            .vendor(border-radius, 0 0 50% 50%);
+                            border-radius: 0 0 50% 50%;
                             bottom: 56%;
+                            &:after {
+                                .pseudoclear;
+                                background: #e30a0a;
+                                width: 37%;
+                                height: 41%;
+                                top: 60%;
+                                left: 0;
+                                right: 0;
+                                margin: auto;
+                                border-radius: 60%;
+                                filter: blur(1em);
+                            }
 
                             .toplip {
                                 border-radius: ~'7% 45% 10% 90% / 5% 80% 10% 96%';
@@ -2057,7 +2069,7 @@ right: 0%;
                         }
 
                         .bottomlip {
-                            .vendor(border-radius, ~'0 0 100% 100% / 2% 2% 191% 191%');
+                            border-radius: ~'0 0 100% 100% / 2% 2% 191% 191%';
                             background-color: #f00000;
                             height: 48%;
                             width: 74%;
@@ -2065,16 +2077,16 @@ right: 0%;
                             left: 0;
                             right: 0;
                             margin: auto;
-                            .vendor(box-shadow, ~'0 -4em 3em -2em #880805, inset 0 4em 3em -2em #460202, 0 22em 6em -5em rgba(249, 238, 223, 0.38), 0 8em 5em -4em #b14534, inset 0 -6em 7em 1em #a70000, 0 18em 13em 5em #e0a490');
+                            box-shadow: ~'0 -4em 3em -2em #880805, inset 0 4em 3em -2em #460202, 0 22em 6em -5em rgba(249, 238, 223, 0.38), 0 8em 5em -4em #b14534, inset 0 -6em 7em 1em #a70000, 0 18em 13em 5em #e0a490';
 
                             &:after {
                                 .pseudoclear;
-                                border-right: 21em double #fff;
+                                border-right: 13em double #fff;
                                 height: 33%;
                                 top: 23%;
-                                right: 27%;
+                                right: 33%;
                                 border-radius:60%;
-                                .vendor(filter, blur(1em));
+                                filter: blur(1em);
                                 opacity:0.5;
                             }
                         }
@@ -2090,18 +2102,18 @@ right: 0%;
                         }
 
                         &:after {
-                            .vendor(border-radius, 100% 0);
+                            border-radius: 100% 0;
                             right: 6%;
                         }
 
                         &:before {
-                            .vendor(border-radius, 0 100%);
+                            border-radius: 0 100%;
                             left: 6%;
                         }
                     }
 
                     .freckle {
-                        .vendor(box-shadow, ~'0 0 1em 0.5em rgba(149, 47, 3, 0.56)');
+                        box-shadow: ~'0 0 1em 0.5em rgba(149, 47, 3, 0.56)';
 
                         &.freckle1 {
                         	left: 26%;
@@ -2362,8 +2374,8 @@ right: 0%;
             right: 7%;
             width: 14%;
             height: 14%;
-            .vendor(transform, ~'rotate(20deg)');
-            .vendor(box-shadow, ~'20em 22em 47em -3em #251802');
+            transform: rotate(20deg);
+            box-shadow: ~'20em 22em 47em -3em #251802';
 
             .front {
                 top: 0;
@@ -2372,7 +2384,7 @@ right: 0%;
                 width: 98%;
                 overflow: hidden;
                 height: 100%;
-                .vendor(box-shadow, ~'inset 7em 0em 10em -2em #FA96A8, inset -3em -5em 6em -1em #fbf3e5, 7em 4em 4em -1em #fbf3e5');
+                box-shadow: ~'inset 7em 0em 10em -2em #FA96A8, inset -3em -5em 6em -1em #fbf3e5, 7em 4em 4em -1em #fbf3e5';
             }
 
             h3,
@@ -2432,8 +2444,8 @@ right: 0%;
                 margin: 0 2%;
                 width: 15%;
                 height: 100%;
-                .vendor(box-shadow, ~'inset -3em -9em 10em -1em #666');
-                .vendor(border-radius, ~'80% 80% 0 0 / 5% 5% 0 0');
+                box-shadow: ~'inset -3em -9em 10em -1em #666';
+                border-radius: ~'80% 80% 0 0 / 5% 5% 0 0';
 
                 &.cig1 {
                     left: 5%;
@@ -2464,7 +2476,7 @@ right: 0%;
                 background-color: #ccc;
                 width: 14%;
                 height: 118%;
-                .vendor(transform, ~'skew(32deg) rotate(32deg)');
+                transform: skew(32deg) rotate(32deg);
             }
 
             .bottombox {
@@ -2474,7 +2486,7 @@ right: 0%;
                 background-color: #868686;
                 width: 100%;
                 height: 5%;
-                .vendor(transform, ~'skew(65deg)');
+                transform: skew(65deg);
             }
         }
 
@@ -2512,10 +2524,10 @@ right: 0%;
     border-right: 4em solid #555;
     width: 230%;
     height: 9%;
-    .vendor(transform, ~'rotate(-1deg)');
+    transform: rotate(-1deg);
     top: -37%;
     left: -71%;
-    .vendor(box-shadow, ~'inset 0 -8em 8em -5em #686868');
+    box-shadow: ~'inset 0 -8em 8em -5em #686868';
 
 
 }
