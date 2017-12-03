@@ -868,7 +868,7 @@ body {
                             box-shadow: inset 0 -3em 2em -1em darken(@bikinicolor, 14%), inset 0 -6em 2em -1em rgba(234, 226, 226, 0.17), 0 3em 3em 0em rgba(121, 47, 34, 0.4);
 
                             .underboob {
-                                box-shadow: ~'-37em 25em 7em 32em rgba(0, 0, 0, 0.24)';
+                                box-shadow: ~'-38em 20em 15em 32em rgba(0, 0, 0, 0.33)';
                                 height: 53%;
                                 width: 50%;
                                 border-radius: ~'0 0 61% 39% / 0 0 99% 26%';
@@ -1142,7 +1142,7 @@ body {
                         top: 43%;
                         border-radius: ~'5% 95% 67% 27% / 5% 26% 68% 95%';
                         box-shadow: inset 22em -2em 18em -8em rgba(0, 0, 0, 0.3), inset -3em -16em 7em -14em fade(darken(@bikinicolor, 30%), 30%), inset 0em 27em 7em -23em lighten(@bikinicolor, 20%);
-                        background-image: radial-gradient(ellipse farthest-side at center 22%, lighten(@bikinicolor, 30%), darken(@bikinicolor, 8%));
+                        background-image: radial-gradient(ellipse farthest-corner at 32% 92%, darken(@bikinicolor, 22%), transparent 63%),  radial-gradient(ellipse farthest-side at center 22%, lighten(@bikinicolor, 30%), darken(@bikinicolor, 8%));
 
                         &.left {
                             left: 15%;
@@ -1162,21 +1162,22 @@ body {
 
                             &.top {
                                 top: 5%;
-                                box-shadow: inset 1em 5em 3em -2em fade(lighten(@bikinicolor, 32%), 40%), 1em -3em 3em -2em fade(darken(@bikinicolor, 32%), 30%);
+                                box-shadow: 0 -4em 5em -2em rgba(0, 0, 0, 0.15), inset 0 3em 5em -2em fade(lighten(@bikinicolor, 12%), 50%);
                             }
                             &.midshadow {
                                 top: 40%;
-                                background: rgba(0, 0, 0, 0.18);
-                                border-top: 0;
-                                box-shadow: 0 -4em 5em -2em rgba(0, 0, 0, 0.29), inset 0 3em 5em -2em lighten(@bikinicolor, 8%);
+                                box-shadow: 0 -4em 5em -2em rgba(0, 0, 0, 0.15), inset 0 3em 5em -2em fade(lighten(@bikinicolor, 12%), 50%);
                             }
                             &.mid {
                                 top: 45%;
+                                box-shadow: 0 -4em 5em -2em rgba(0, 0, 0, 0.15), inset 0 3em 5em -2em fade(lighten(@bikinicolor, 12%), 50%);
+
                             }
                             &.bottom {
-                                bottom: 3%;
-                                right: 3%;
+                                bottom: 2%;
+                                right: 2%;
                                 border: @bikinistitch;
+                                box-shadow: inset -5em -5em 3em -5em rgba(0, 0, 0, 0.1), 5em 5em 3em -5em fade(lighten(@bikinicolor, 20%), 30%);
 
                             }
                         }
