@@ -6,7 +6,10 @@
 @skin: #ecc5b5;
 @backgroundred: #ca2902;
 
-@bikinicolor: #329482;
+@teal: #329482;
+@red: #c00000;
+@pink: #e9a7b4;
+@bikinicolor: @pink;
 @bikinistitchcolor: darken(@bikinicolor, 40%);
 @bikinistitch: 1em dashed fade(@bikinistitchcolor, 30%);
 
@@ -51,7 +54,7 @@ body {
         position: relative;
         margin: auto;
         background-color: #6fae93;
-        background-image: radial-gradient(ellipse closest-corner at center center, #f09026, #a70404);
+        background-image: radial-gradient(ellipse closest-corner at center center, #abd0c9, #559f90);
         outline: 10em solid #ebdddd;
         overflow: hidden;
         width: 598em;
@@ -804,7 +807,7 @@ body {
                     height: 63%;
                     transform: perspective(605em) rotateX(-1.5deg) rotate(42deg);
                     border-radius: ~'100% 0 89% 12% / 30% 0 15% 62%';
-                    box-shadow: inset -50em 2em 36em -32em #7e2317, inset 42em -5em 41em -32em #8b2c21;
+                    box-shadow: inset -50em 2em 36em -32em #7e2317, inset 39em -5em 41em -32em #8b2c21;
 
                     .delt {
                         box-shadow: 0 0 24em 11em #f2d5c7, 6em 34em 21em 12em #e9b8a6, 27em 57em 21em 3em rgba(155, 69, 56, 0.19);
@@ -882,7 +885,7 @@ body {
                             box-shadow: inset 0 -3em 2em -1em darken(@bikinicolor, 14%), inset 0 -6em 2em -1em rgba(234, 226, 226, 0.17), 0 3em 3em 0em rgba(121, 47, 34, 0.4);
 
                             .underboob {
-                                box-shadow: ~'-38em 20em 15em 32em rgba(0, 0, 0, 0.33)';
+                                box-shadow: -38em 20em 15em n32em fade(darken(@bikinicolor, 70%), 30%);
                                 height: 53%;
                                 width: 50%;
                                 border-radius: ~'0 0 61% 39% / 0 0 99% 26%';
@@ -1048,7 +1051,7 @@ body {
                             height: 108%;
                             top: 49%;
                             border-radius: ~'59% 41% 0 0 / 42% 42% 0 0';
-                            box-shadow: ~'-14em -4em 1em -13em maroon, inset -29em -20em 32em -24em #d89382, 10em 10em 12em -2em #d6907f, inset 44em -68em 35em -25em #b13e2e, -20em 25em 27em 7em #8a0d0d, -67em -16em 29em 7em #eabbae, inset 0em 2em 34em 26em #e8b39f, -2em -11em 16em 6em #e8b3a0';
+                            box-shadow: ~'-14em -4em 1em -13em maroon, inset -29em -20em 32em -24em #cc806d, 10em 10em 12em -2em #d68476, inset 44em -68em 35em -25em #b13e2e, -20em 25em 27em 7em #8a0d0d, -67em -16em 29em 7em #eabbae, inset 0em 2em 34em 26em #e8b39f, -2em -11em 16em 6em #e8b3a0';
 
                             &:after {
                                 .pseudoclear;
@@ -1138,7 +1141,7 @@ body {
                     top: 22%;
                     height: 23%;
                     transform: rotate(-4deg);
-                    box-shadow: 0 0 7em 4em rgba(58, 14, 7, 0.45);
+                    box-shadow: 0 0 4em 4em rgba(58, 14, 7, 0.45);
                     &.left {
                         left: 17%;
                     }
@@ -1155,7 +1158,7 @@ body {
                         height: 21%;
                         top: 43%;
                         border-radius: ~'5% 95% 67% 27% / 5% 26% 68% 95%';
-                        box-shadow: inset 22em -2em 18em -8em rgba(0, 0, 0, 0.3), inset -3em -16em 7em -14em fade(darken(@bikinicolor, 30%), 30%), inset 0em 27em 7em -23em lighten(@bikinicolor, 20%);
+                        box-shadow: inset 22em -2em 18em -8em fade(darken(@bikinicolor, 70%), 30%), inset -3em -16em 7em -14em fade(darken(@bikinicolor, 30%), 30%), inset 0 27em 5em -25em lighten(@bikinicolor, 10%);
                         background-image: radial-gradient(ellipse farthest-corner at 32% 92%, darken(@bikinicolor, 22%), transparent 63%),  radial-gradient(ellipse farthest-side at center 22%, lighten(@bikinicolor, 30%), darken(@bikinicolor, 8%));
 
                         &.left {
@@ -1165,7 +1168,6 @@ body {
                         &.right {
                             right: 15%;
                             transform: scaleX(-1);
-
                         }
 
                         .stitch {
@@ -1176,22 +1178,22 @@ body {
 
                             &.top {
                                 top: 5%;
-                                box-shadow: 0 -4em 5em -2em rgba(0, 0, 0, 0.15), inset 0 3em 5em -2em fade(lighten(@bikinicolor, 12%), 50%);
+                                box-shadow: 0 -4em 5em -2em fade(darken(@bikinicolor, 50%), 15%), inset 0 3em 5em -2em fade(lighten(@bikinicolor, 12%), 50%);
                             }
                             &.midshadow {
                                 top: 40%;
-                                box-shadow: 0 -4em 5em -2em rgba(0, 0, 0, 0.15), inset 0 3em 5em -2em fade(lighten(@bikinicolor, 12%), 50%);
+                                box-shadow: 0 -4em 5em -2em fade(darken(@bikinicolor, 50%), 15%), inset 0 3em 5em -2em fade(lighten(@bikinicolor, 12%), 50%);
                             }
                             &.mid {
                                 top: 45%;
-                                box-shadow: 0 -4em 5em -2em rgba(0, 0, 0, 0.15), inset 0 3em 5em -2em fade(lighten(@bikinicolor, 12%), 50%);
+                                box-shadow: 0 -4em 5em -2em fade(darken(@bikinicolor, 50%), 15%), inset 0 3em 5em -2em fade(lighten(@bikinicolor, 12%), 50%);
 
                             }
                             &.bottom {
                                 bottom: 2%;
                                 right: 2%;
                                 border: @bikinistitch;
-                                box-shadow: inset -5em -5em 3em -5em rgba(0, 0, 0, 0.1), 5em 5em 3em -5em fade(lighten(@bikinicolor, 20%), 30%);
+                                box-shadow: inset -5em -5em 3em -5em fade(darken(@bikinicolor, 70%), 10%), 5em 5em 3em -5em fade(lighten(@bikinicolor, 20%), 30%);
 
                             }
                         }
@@ -1243,7 +1245,7 @@ body {
                     height: 65%;
                     width: 94%;
                     overflow: hidden;
-                    background-image: radial-gradient(ellipse at center 14%, lighten(@bikinicolor, 15%), darken(@bikinicolor, 3%) 35%);
+                    background-image: radial-gradient(ellipse at center 14%, tint(@bikinicolor, 15%), darken(@bikinicolor, 3%) 35%);
                     transform: rotate(-6deg);
                     border-radius: ~'29% 30% 0% 0% / 100% 100% 0% 0%';
 
@@ -1263,7 +1265,7 @@ body {
                         height: 20%;
                         top: -9%;
                         border-radius: 50%;
-                        box-shadow: 8em 25em 26em -14em lighten(@bikinicolor, 2%);
+                        box-shadow: 8em 25em 26em -14em tint(@bikinicolor, 4%);
                     }
                     .elbowshadow {
                         right: 21%;
@@ -1684,12 +1686,15 @@ body {
 
                     .blush {
                         top: 60%;
-                        box-shadow: 0 0 40em 12em rgba(255, 67, 102, 0.85);
+                        width: 3%;
+                        box-shadow: 0em -7em 4em 3em rgba(255, 255, 255, 0.25), 0 0 40em 12em rgba(255,67,102,0.85);
                         &.left {
                             left: 16%;
+                            transform: rotate(25deg);
                         }
                         &.right{
                             right: 16%;
+                            transform: rotate(-25deg);
                         }
                     }
 
@@ -1748,7 +1753,7 @@ body {
                         height: 5%;
                         z-index: 3;
                         border-radius: ~'100% 0% 100% 0% / 100% 0% 100% 0%';
-                        box-shadow: ~'1em 6em 8em -1em #9d4040, 5em -9em 7em 3em #741e0d, 0em 34em 18em -1em rgba(251, 243, 229, 0.49)';
+                        box-shadow: ~'1em 6em 8em -1em #9d4040, 5em -9em 7em 3em #741e0d';
 
                         .lash {
                             border-color: #2f1505;
@@ -1877,15 +1882,15 @@ right: 0%;
 
                             .iris {
                                 background-color: #fff;
-                                width: 40%;
-                                height: 102%;
+                                width: 45%;
+                                height: 118%;
                                 border-radius: ~'100%';
-                                left: 44%;
-                                top: -11%;
-                                box-shadow: ~'inset 0 9em 3em -2em rgba(32, 32, 32, 0.86), inset 0 0 1em 1em #505a57, inset 0 0 0 3em #8ba897, inset 0 0 0em 6em #341704';
+                                left: 37%;
+                                top: -25%;
+                                box-shadow: ~'inset 0 9em 3em -2em rgba(32, 32, 32, 0.86), inset 0 0 1em 1em #505a57, inset 0 0 0 3em #8ba897, inset 0 0 0em 7.2em #341704';
                                 &.leftiris {
-                                    left: 16%;
-                                    top: 4%;
+                                    left: 14%;
+                                    top: -14%;
                                 }
 
                                 &:before {
@@ -1895,9 +1900,9 @@ right: 0%;
                                     top: 0;
                                     bottom: 0;
                                     margin: auto;
-                                    width: 35%;
-                                    height: 37%;
-                                    border: 2em dotted rgba(243, 231, 199, 0.64);
+                                    width: 46%;
+                                    height: 46%;
+                                    border: 2em dotted rgba(243, 231, 199, 0.4);
                                     border-radius: 50%;
                                 }
                                 &:after {
@@ -1976,11 +1981,11 @@ right: 0%;
                             margin: auto;
                             width: 46%;
                             height: 90%;
-                            border-radius: ~'50% 50% 50% 50% / 12% 12% 9% 9%';
+                            border-radius: ~'50% 50% 50% 50% / 12% 12% 12% 12%';
                             left: 0;
                             right: 0;
                             bottom: 3%;
-                            box-shadow: 0 -6em 3em -2em #d5b096, 0 5em 3em -2em #a93636, inset 0 -9em 6em -7em #8e1e1e, inset 0 42em 4em -10em #deb598, inset 0 -4em 5em 4em #ca887a, inset 0 -21em 7em -3em #f8d4ca;
+                            box-shadow: 0 -6em 3em -2em #d5b096, 0 6em 3em -2em #841717, inset 0 -9em 6em -7em #8e1e1e, inset 0 42em 4em -10em #deb598, inset 0 -4em 5em 4em #ca887a, inset 0 -21em 7em -3em #f8d4ca;
                         }
 
                         .philtrum {
@@ -1999,7 +2004,7 @@ right: 0%;
                             width: 45%;
                             height: 33%;
                             border-radius: ~'50% 50% 35% 35% / 39% 60% 30% 56%';
-                            box-shadow: ~'inset 0 -3em 5em 1em #ae564c, inset 0 -8em 6em -6em #9d5757, -1em 3em 5em -1em #994d3b';
+                            box-shadow: ~'inset 0 -3em 5em 1em #ae564c, inset 0 -8em 6em -6em #9d5757, 0em 3em 3em -1em #994d3b';
                             background-color: #d58f80;
                             bottom: 0%;
                             margin: auto;
@@ -2021,7 +2026,7 @@ right: 0%;
                                 border-radius: 100%;
                                 bottom: 17%;
                                 background-color: #530505;
-                                box-shadow: 0 0 3em 1em #650e0b, 2em 4em 3em 0em #f4e7d7;
+                                box-shadow: 0 1em 3em 1em #650e0b, 2em 4em 3em 0 rgba(244, 231, 215, 0.24);
 
                             }
                         }
@@ -2072,7 +2077,7 @@ right: 0%;
                             bottom: 56%;
                             &:after {
                                 .pseudoclear;
-                                background: #d80b0b;
+                                background: #b50202;
                                 width: 37%;
                                 height: 41%;
                                 top: 60%;
@@ -2085,7 +2090,7 @@ right: 0%;
 
                             .toplip {
                                 border-radius: ~'7% 45% 10% 90% / 5% 80% 10% 96%';
-                                background-color: #cc0505;
+                                background-color: #ab0000;
                                 box-shadow: inset 6em -7em 6em -6em #840606, 0 -12em 6em -6em #e6b8a3, -1em 3em 3em -2em #8a0606;
                                 top: 43%;
                                 width: 41%;
@@ -2106,24 +2111,27 @@ right: 0%;
 
                         .bottomlip {
                             border-radius: ~'0 0 100% 100% / 2% 2% 191% 191%';
-                            background-color: #f00000;
+                            background-color: #c00000;
                             height: 48%;
                             width: 74%;
                             top: 43%;
                             left: 0;
                             right: 0;
                             margin: auto;
-                            box-shadow: ~'0 -4em 3em -2em #880805, inset 0 4em 3em -2em #460202, 0 22em 6em -5em rgba(249, 238, 223, 0.38), 0 8em 5em -4em #b14534, inset 0 -6em 7em 1em #a70000, 0 18em 13em 5em #e0a490';
+                            box-shadow: ~'inset 0 4em 3em -2em #460202, 0 22em 6em -5em rgba(249, 238, 223, 0.38), 0 8em 5em -4em #b14534, inset 0 -3em 7em 1em #840303, 0 18em 13em 5em #e0a490';
 
                             &:after {
                                 .pseudoclear;
-                                border-right: 13em double #fff;
-                                height: 33%;
-                                top: 23%;
-                                right: 33%;
-                                border-radius:60%;
-                                filter: blur(1em);
-                                opacity:0.5;
+                                border-bottom: 3em dashed #fff;
+                                height: 42%;
+                                top: 0;
+                                width: 55%;
+                                left: 0;
+                                right: 0;
+                                margin: auto;
+                                border-radius: 60%;
+                                filter: blur(0.7em);
+                                opacity: .5;
                             }
                         }
 
@@ -2131,7 +2139,7 @@ right: 0%;
                         &:before {
                             .pseudoclear;
                             z-index: 21;
-                            top: 40%;
+                            top: 36%;
                             box-shadow: 0 0 4em 1em rgba(103, 15, 6, 0.89);
                             border-top: 3em solid #5d0000;
                             width: 11%;
@@ -2570,8 +2578,9 @@ right: 0%;
 .smoke {
     height: 12%;
 width: 2%;
-border-right: 7em solid rgba(179,177,177,0.77);
-border-top: 12em solid rgba(196,196,196,0.85);
+color: rgba(239, 239, 239, 0.55);
+border-right: 7em solid;
+border-top: 12em solid;
 top: 40%;
 border-radius: ~'7% 91% 91% 0 / 0% 25% 72% 0';
 right: 24%;
