@@ -1,11 +1,7 @@
 // out: zigario.css, sourcemap: true, compress: true
-
-
 /* ZIGARO */
-
 @skin: #ecc5b5;
 @backgroundred: #ca2902;
-
 @teal: #329482;
 @red: #c00000;
 @pink: #e18093;
@@ -21,9 +17,10 @@
     content: "";
     display: block;
     position: absolute;
-    -webkit-print-color-adjust:exact;
+    -webkit-print-color-adjust: exact;
     -webkit-filter:opacity(1);
 }
+
 .linksection {
     font-size: 12px;
     text-align: center;
@@ -31,17 +28,25 @@
     padding: 0 0 30px;
     font-family: 'Century Gothic', Arial, sans-serif;
     color: #650518;
+
     .separator {
         padding: 0 5px;
     }
+
     a {
         color: #b3173e;
     }
 }
 
-div, h1, h2, h3, h4, h5, h6 {
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     position: absolute;
-    -webkit-print-color-adjust:exact;
+    -webkit-print-color-adjust: exact;
     -webkit-filter:opacity(1);
 }
 
@@ -94,10 +99,12 @@ body {
 
                 ._73 {
                     top: 0.17em;
+
                     &.first {
                         transform-origin: 100% 0;
                         transform: skewY(-11deg);
                     }
+
                     &.second {
                         transform-origin: 0 0;
                         transform: skewY(11deg);
@@ -107,7 +114,6 @@ body {
                 ._71 {
                     transform: skewY(-9deg);
                     transform-origin: 100% 0;
-
                 }
 
                 ._82 {
@@ -119,7 +125,6 @@ body {
                     top: 0.25em;
                     transform: skewY(18deg);
                     transform-origin: 0 0;
-
                 }
             }
 
@@ -163,9 +168,9 @@ body {
                         }
                     }
 
-                    .hair,
                     .bangs,
                     .curl,
+                    .hair,
                     .transparence {
                         overflow: hidden;
 
@@ -540,7 +545,7 @@ body {
                         &.left {
                             border-radius: ~'0% 23% 73% 0% / 0% 43% 53% 0%';
                             transform: rotateZ(77deg) scaleX(-1);
-                            box-shadow: -4em -1em 1em 0em #c48069;
+                            box-shadow: -4em -1em 1em 0 #c48069;
                             background: #cc5b04;
                             left: -9%;
                             top: -8%;
@@ -548,13 +553,12 @@ body {
                             width: 92%;
 
                             &:after {
-                                box-shadow: inset 6em 2em 1em 0em #bf7a62, inset 7em -9em 15em 0em #7d2e01;
+                                box-shadow: inset 6em 2em 1em 0 #bf7a62, inset 7em -9em 15em 0 #7d2e01;
                             }
                         }
                     }
 
                     .transparence {
-
                         .strand {
                             background: none;
                             box-shadow: 1em 0 4em 0 #fff0d4, 2em 0 4em 0 #734d10;
@@ -577,7 +581,6 @@ body {
                             border-radius: ~'25% 28% 25% 39% / 50% 50% 50% 50%';
                             transform: scaleX(-1) rotateZ(44deg);
                         }
-
 
                         &.bottom {
                             width: 131%;
@@ -605,7 +608,6 @@ body {
                             border-radius: ~'20% 20% 20% 20% / 50% 50% 50% 50%';
                         }
 
-
                         &.curlbacks {
                             width: 68%;
                             height: 8%;
@@ -624,7 +626,6 @@ body {
                             transform: scaleX(-1) rotate(-19deg);
                         }
 
-
                         &.rights {
                             width: 85%;
                             height: 28%;
@@ -633,7 +634,6 @@ body {
                             transform: rotate(183deg);
                             border-radius: ~'50%';
                         }
-
                     }
 
                     .curl {
@@ -692,6 +692,7 @@ body {
                             &:after {
                                 box-shadow: inset -9em 8em 9em -7em #fff;
                             }
+
                             .strand {
                                 background: radial-gradient(farthest-corner at top right, #6f4600, #ffeec7 20%, #7e5406 45%, #2b1c01);
                                 box-shadow: 0 3em 4em 1em #463000, inset 0 0 2em 1em #664d02;
@@ -709,14 +710,14 @@ body {
                     box-shadow: inset -3em -6em 1em 6em #b57b65, inset 0 -16em 3em 7em #993e32, 17em 37em 9em 9em rgba(58, 20, 1, 0.57);
 
                     &:after {
-                        display:block;
-                        content:"";
+                        display: block;
+                        content: "";
                         width: 30%;
                         height: 15%;
-                        background:#eee;
-                        position:absolute;
-                        bottom:-3%;
-                        left:35%;
+                        background: #eee;
+                        position: absolute;
+                        bottom: -3%;
+                        left: 35%;
                         border-radius: ~'50%';
                         box-shadow: inset 2em -5em 5em -1em #333, 2em 3em 3em -1em rgba(0, 0, 0, 0.45);
                     }
@@ -751,7 +752,7 @@ body {
                     right: -5%;
                     top: 17.5%;
                     border-radius: ~'0 94% 27% 41% / 0 30% 60% 25%';
-                    box-shadow: inset -5em 3em 15em -2em #fff, inset 20em 0em 47em 1em #c1695d, inset -15em -3em 33em 0em #c26355;
+                    box-shadow: inset -5em 3em 15em -2em #fff, inset 20em 0 47em 1em #c1695d, inset -15em -3em 33em 0 #c26355;
 
                     .delt {
                         box-shadow: 0 0 24em 14em #ecc2b3, 6em 34em 21em 12em #dc9c8a, 27em 57em 21em 3em rgba(155,69,56,0.19);
@@ -771,8 +772,6 @@ body {
                         left: 52%;
                         box-shadow: 0 0 23em 5em #eec8bb;
                     }
-
-
                 }
 
                 .armfore {
@@ -786,6 +785,7 @@ body {
                     border-radius: ~'20% 51% 49% 20% / 13% 39% 50% 61%';
                     transform-origin: 0 0;
                     transform: perspective(33em) rotateX(-1.4deg) rotate(-27deg);
+
                     .armshadow {
                         top: -7%;
                         height: 98%;
@@ -848,11 +848,12 @@ body {
                     transform: rotate(-13deg);
                     box-shadow: 0 -21em 19em 14em rgba(162,88,75,0.3), -17em 0 22em 15em #d0927e, 8em 0 19em 11em #a45c4f;
                 }
+
                 .waist {
                     top: 35%;
                     left: 15%;
                     height: 40%;
-                    width: 68%;
+                    width: 67%;
                     overflow: hidden;
                     transform: rotateZ(-9deg);
                     transform-origin: 100% 0;
@@ -875,15 +876,16 @@ body {
                             transform: rotate(1deg);
                             box-shadow: inset 0 -14em 23em 0 rgba(144, 66, 52, 0.18);
                         }
+
                         .underboobs {
                             width: 95%;
                             height: 35%;
                             top: 22%;
-                            transform: rotateZ(9deg);
+                            transform: rotateZ(11deg);
                             border-radius: ~'0 0 50% 50% / 0 0 21% 6%';
                             background-color: @bikinicolor;
-                            background-image: linear-gradient(72deg, darken(@bikinicolor, 50%), transparent 25%), linear-gradient(-72deg, darken(@bikinicolor, 50%), transparent 25%);
-                            box-shadow: inset 0 -3em 2em -1em fade(darken(@bikinicolor, 40%), 30%), inset 0 -6em 2em -1em rgba(234, 226, 226, 0.17), 0 3em 3em 0em rgba(121, 47, 34, 0.2);
+                            background-image: linear-gradient(72deg, darken(@bikinicolor, 40%) 12%, transparent 33%), linear-gradient(-72deg, darken(@bikinicolor, 40%) 12%, transparent 33%);
+                            box-shadow: inset 0 -3em 2em -1em fade(darken(@bikinicolor, 40%), 30%), inset 0 -6em 2em -1em rgba(234, 226, 226, 0.17), 0 3em 3em 0 rgba(121, 47, 34, 0.2);
 
                             .underboob {
                                 box-shadow: -40em 14em 11em 32em fade(darken(@bikinicolor, 40%), 30%);
@@ -896,7 +898,7 @@ body {
                                     transform: scaleX(-1);
                                 }
                             }
-                          }
+                        }
                     }
                 }
 
@@ -907,7 +909,7 @@ body {
                     background: #f5cec1;
                     left: 53%;
                     top: 85%;
-                    box-shadow: 0 -4em 5em 0em #ae4d4d, 0 -26em 50em 54em #f6cfc2, 0 -22em 50em 90em #e9b5a2, 0 50em 90em 50em #b65c52, inset 0 10em 9em -6em #741a09;
+                    box-shadow: 0 -4em 5em 0 #ae4d4d, 0 -26em 50em 54em #f6cfc2, 0 -22em 50em 90em #e9b5a2, 0 50em 90em 50em #b65c52, inset 0 10em 9em -6em #741a09;
                 }
 
                 .upperbody {
@@ -928,7 +930,7 @@ body {
                         width: 10%;
                         height: 24%;
                         border-radius: 50%;
-                        box-shadow: 0em 14em 10em 8em #f5dfd0, inset -8em -17em 14em -9em #f4dece, inset 8em -17em 14em -9em #f4decf, inset 0em -18em 14em -3em #841706, inset 0 5em 8em -1em #d79e8c, inset 0 21em 9em -4em #f4ddcd;
+                        box-shadow: 0 14em 10em 8em #f5dfd0, inset -8em -17em 14em -9em #f4dece, inset 8em -17em 14em -9em #f4decf, inset 0 -18em 14em -3em #841706, inset 0 5em 8em -1em #d79e8c, inset 0 21em 9em -4em #f4ddcd;
                         z-index: 10;
                     }
 
@@ -958,11 +960,13 @@ body {
                         border-radius: 90%;
                         border-bottom-width: 16em;
                         border-bottom-style: solid;
+
                         &.left {
                             right: 66.5%;
                             border-color: #b5685d;
                             transform: rotateZ(-44deg);
                         }
+
                         &.right {
                             left: 63.3%;
                             border-color: #f5e6e1;
@@ -981,13 +985,14 @@ body {
                         height: 99.5%;
                         z-index: 2;
                         border-radius: ~'inherit';
-                        box-shadow: inset -19em 8em 6em -13em rgba(255, 255, 255, 0.82), inset 0em 10em 21em 2em #ad4033, inset -15em 0em 55em -22em #94271a, inset 15em 0em 55em -22em #982319;
+                        box-shadow: inset -19em 8em 6em -13em rgba(255, 255, 255, 0.82), inset 0 10em 21em 2em #ad4033, inset -15em 0 55em -22em #94271a, inset 15em 0 55em -22em #982319;
 
-                        &:before, &:after {
+                        &:after,
+                        &:before {
                             .pseudoclear;
                             top: 20%;
                             height: 100%;
-                            z-index:999;
+                            z-index: 999;
                         }
 
                         .centershine {
@@ -1052,7 +1057,7 @@ body {
                             height: 108%;
                             top: 49%;
                             border-radius: ~'59% 41% 0 0 / 42% 42% 0 0';
-                            box-shadow: -14em -4em 1em -13em maroon, inset -29em -20em 32em -24em #cc806d, 10em 10em 12em -2em #d68476, inset 44em -68em 35em -25em #b13e2e, -20em 25em 27em 7em #8a0d0d, -67em -16em 29em 7em #eabbae, inset 0em 2em 34em 26em #e8b39f, -2em -11em 16em 6em #e8b3a0;
+                            box-shadow: -14em -4em 1em -13em maroon, inset -29em -20em 32em -24em #cc806d, 10em 10em 12em -2em #d68476, inset 44em -68em 35em -25em #b13e2e, -20em 25em 27em 7em #8a0d0d, -67em -16em 29em 7em #eabbae, inset 0 2em 34em 26em #e8b39f, -2em -11em 16em 6em #e8b3a0;
 
                             &:after {
                                 .pseudoclear;
@@ -1078,15 +1083,13 @@ body {
                         }
 
                         .vein {
-
-
                             &.vein0 {
                                 width: 29%;
                                 height: 72%;
                                 left: 9%;
                                 top: 22%;
                                 border-radius: 50%;
-                                box-shadow: -2em -2em 3em 0em rgba(79, 138, 245, 0.05), inset 2em 2em 3em 0em rgba(79, 138, 245, 0.05);
+                                box-shadow: -2em -2em 3em 0 rgba(79, 138, 245, 0.05), inset 2em 2em 3em 0 rgba(79, 138, 245, 0.05);
                             }
 
                             &.vein1 {
@@ -1095,9 +1098,8 @@ body {
                                 left: 23%;
                                 top: 53%;
                                 border-radius: 80% 0 0 0;
-                                box-shadow: -2em -2em 3em 0em rgba(79, 138, 245, 0.05), inset 2em 2em 3em 0em rgba(79, 138, 245, 0.05);
+                                box-shadow: -2em -2em 3em 0 rgba(79, 138, 245, 0.05), inset 2em 2em 3em 0 rgba(79, 138, 245, 0.05);
                             }
-
 
                             &.vein2 {
                                 width: 18%;
@@ -1106,7 +1108,7 @@ body {
                                 top: 73%;
                                 transform: rotate(53deg);
                                 border-radius: 0 0 0 79%;
-                                box-shadow: -2em 2em 3em 0em rgba(79, 138, 245, 0.05), inset 2em -2em 3em 0em rgba(79, 138, 245, 0.05);
+                                box-shadow: -2em 2em 3em 0 rgba(79, 138, 245, 0.05), inset 2em -2em 3em 0 rgba(79, 138, 245, 0.05);
                             }
 
                             &.vein3 {
@@ -1116,7 +1118,7 @@ body {
                                 top: 78%;
                                 transform: rotate(70deg);
                                 border-radius: 0 80% 0 75%;
-                                box-shadow: -2em 2em 3em 0em rgba(79, 138, 245, 0.05), inset 2em -2em 3em 0em rgba(79, 138, 245, 0.05);
+                                box-shadow: -2em 2em 3em 0 rgba(79, 138, 245, 0.05), inset 2em -2em 3em 0 rgba(79, 138, 245, 0.05);
                             }
 
                             &.vein4 {
@@ -1142,15 +1144,18 @@ body {
                     top: 22%;
                     height: 23%;
                     box-shadow: 0 0 4em 6em rgba(85, 21, 11, 0.35);
+
                     &.left {
                         left: 17%;
                         transform: rotate(-7deg);
                     }
+
                     &.right {
                         right: 14%;
                         transform: rotate(-4deg);
                     }
                 }
+
                 .bikini {
                     background: @bikinicolor;
 
@@ -1161,7 +1166,7 @@ body {
                         top: 43%;
                         border-radius: ~'5% 95% 67% 27% / 5% 26% 68% 95%';
                         box-shadow: inset 22em -29em 18em -8em fade(darken(@bikinicolor, 55%), 30%), inset -3em -16em 7em -14em fade(darken(@bikinicolor, 30%), 30%), inset 0 27em 5em -25em lighten(@bikinicolor, 10%);
-                        background-image: radial-gradient(ellipse farthest-corner at 32% 92%, darken(@bikinicolor, 22%), transparent 63%),  radial-gradient(ellipse farthest-side at center 22%, lighten(@bikinicolor, 20%), darken(@bikinicolor, 8%));
+                        background-image: radial-gradient(ellipse farthest-corner at 32% 92%, darken(@bikinicolor, 22%), transparent 63%), radial-gradient(ellipse farthest-side at center 22%, lighten(@bikinicolor, 20%), darken(@bikinicolor, 8%));
 
                         &.left {
                             left: 15%;
@@ -1182,25 +1187,25 @@ body {
                                 top: 5%;
                                 box-shadow: 0 -4em 5em -2em fade(darken(@bikinicolor, 50%), 15%), inset 0 3em 5em -2em fade(lighten(@bikinicolor, 12%), 50%);
                             }
+
                             &.midshadow {
                                 top: 40%;
                                 box-shadow: 0 -4em 5em -2em fade(darken(@bikinicolor, 50%), 15%), inset 0 3em 5em -2em fade(lighten(@bikinicolor, 12%), 50%);
                             }
+
                             &.mid {
                                 top: 45%;
                                 box-shadow: 0 -4em 5em -2em fade(darken(@bikinicolor, 50%), 15%), inset 0 3em 5em -2em fade(lighten(@bikinicolor, 12%), 50%);
-
                             }
+
                             &.bottom {
                                 bottom: 2%;
                                 right: 2%;
                                 border: @bikinistitch;
                                 box-shadow: inset -5em -5em 3em -5em fade(darken(@bikinicolor, 70%), 10%), 5em 5em 3em -5em fade(lighten(@bikinicolor, 20%), 30%);
-
                             }
                         }
                     }
-
 
                     &.strap {
                         width: 5%;
@@ -1222,58 +1227,69 @@ body {
                             border: @bikinistitch;
                         }
 
-                          &.left {
+                        &.left {
                             left: 12%;
-                              border-radius: ~'70% 30% 5% 95% / 7% 3% 72% 83%';
+                            border-radius: ~'70% 30% 5% 95% / 7% 3% 72% 83%';
+                        }
 
-                          }
+                        &.right {
+                            right: 13%;
+                            top: 18.7%;
+                            border-radius: ~'30% 70% 95% 5% / 3% 5% 83% 72%';
+                        }
+                    }
+                }
 
-                          &.right {
-                              right: 13%;
-                              top: 18.7%;
-                              border-radius: ~'30% 70% 95% 5% / 3% 5% 83% 72%';
-                          }
+                .waistband {
+                    top: 73%;
+                    left: 29%;
+                    height: 12%;
+                    width: 47%;
+                    background-color: @bikinicolor;
+                    background-image: linear-gradient(72deg, darken(@bikinicolor, 30%) 2%, transparent 20%), linear-gradient(-72deg, darken(@bikinicolor, 30%) 7%, transparent 32%), radial-gradient(ellipse at center bottom, lighten(@bikinicolor, 15%), darken(@bikinicolor, 3%) 55%);
+                    box-shadow: 0 4em 7em -1em  fade(darken(@bikinicolor, 30%), 17%);
+                    border-radius: ~'0 0 50% 50% / 0 0 50% 50%';
+                    transform: rotate(-7deg);
+                    overflow: hidden;
 
-                      }
+                    .topshadow {
+                        width: 88%;
+                        left: 5%;
+                        height: 83%;
+                        top: -34%;
+                        border-radius: 50%;
+                        transform: rotate(-1deg);
+                        box-shadow: 0 6em 4em 1em fade(lighten(@bikinicolor, 15%), 30%);
+                    }
 
 
+                    .topseam {
+                        border-bottom: @bikinistitch;
+                        width: 111%;
+                        left: -6%;
+                        height: 140%;
+                        bottom: 8%;
+                        border-radius: 50%;
+                        box-shadow: 0em 20em 7em -19em tint(@bikinicolor, 9%), inset 0em -4em 7em -2em fade(darken(@bikinicolor, 20%), 25%);
+                    }
 
                 }
 
                 .banner {
-                    box-shadow: inset 0 -17em 17em 36em fade(darken(@bikinicolor, 80%), 15%), inset 0 -60em 123em 46em darken(@bikinicolor, 30%);
-                    top: 75%;
-                    left: 12%;
-                    height: 65%;
+                    box-shadow: inset 0 -17em 17em 36em fade(darken(@bikinicolor, 80%), 15%), inset -28em -60em 123em 66em darken(@bikinicolor, 30%);
+                    top: 76%;
+                    left: 11%;
+                    height: 55%;
                     width: 94%;
                     overflow: hidden;
                     background-image: radial-gradient(ellipse at center 14%, lighten(@bikinicolor, 15%), darken(@bikinicolor, 3%) 35%);
                     transform: rotate(-6deg);
-                    border-radius: ~'29% 30% 0% 0% / 100% 100% 0% 0%';
-
-                    .topshadow {
-                        width: 52%;
-                        left: 21%;
-                        height: 15%;
-                        top: -10%;
-                        border-radius: 50%;
-                        transform: rotate(-3deg);
-                        box-shadow: 0 7em 4em 1em lighten(@bikinicolor, 5%);
-                    }
-                    .topseam {
-                        border-bottom: @bikinistitch;
-                        width: 60%;
-                        left: 15%;
-                        height: 20%;
-                        top: -9%;
-                        border-radius: 50%;
-                        box-shadow: 8em 25em 26em -14em tint(@bikinicolor, 4%);
-                    }
+                    border-radius: ~'33% 39% 0% 0% / 100% 100% 0% 0%';
                     .elbowshadow {
                         right: 21%;
                         height: 25%;
                         transform: rotate(-36deg);
-                        box-shadow: 0 0 23em 18em rgba(1, 30, 24, 0.27);
+                        // box-shadow: 0 0 23em 18em rgba(1, 30, 24, 0.27);
                     }
                 }
 
@@ -1296,7 +1312,7 @@ body {
                     z-index: 9;
                     transform: rotate(-5deg);
                     border-radius: ~'0 0 50% 50% / 0 0 30% 32%';
-                    box-shadow: 0 9em 8em -6em #d79e8b, inset 0 -26em 24em -9em #d79e8c, inset -19em -4em 6em -13em rgba(255, 255, 255, 0.86), inset 18em 59em 23em 0em #a75147, inset -14em 59em 24em -1em #a34135, inset 0 105em 42em -35em #DA6D6D;
+                    box-shadow: 0 9em 8em -6em #d79e8b, inset 0 -26em 24em -9em #d79e8c, inset -19em -4em 6em -13em rgba(255, 255, 255, 0.86), inset 18em 59em 23em 0 #a75147, inset -14em 59em 24em -1em #a34135, inset 0 105em 42em -35em #DA6D6D;
 
                     &:before {
                         .pseudoclear;
@@ -1307,12 +1323,13 @@ body {
                         opacity: 0.55;
                         height: 70%;
                         border-radius: 20% 20% 20% 50%;
-                        box-shadow: 0 0em 9em 7em #541003;
+                        box-shadow: 0 0 9em 7em #541003;
                         transform: rotate(-56deg);
                     }
                 }
 
-                .cord, .cordshadow {
+                .cord,
+                .cordshadow {
                     &.left {
                         transform: rotateZ(-9deg);
                     }
@@ -1329,7 +1346,7 @@ body {
                     z-index: 14;
 
                     &.left {
-                        left: 46%
+                        left: 46%;
                     }
 
                     &.right {
@@ -1344,7 +1361,7 @@ body {
                     z-index: 11;
 
                     &.left {
-                        left: 43%
+                        left: 43%;
                     }
 
                     &.right {
@@ -1371,11 +1388,11 @@ body {
                     overflow: hidden;
                     width: 100%;
                     height: 100%;
-                    box-shadow: inset 9em 1em 6em -6em rgba(103, 30, 14, 0.63), inset 0 72em 26em -26em rgba(210, 147, 124, 0.57), inset -19em -9em 6em -19em rgba(255, 255, 255, 0.85), inset -10em -4em 8em -6em #731804, inset 0 -16em 6em -12em rgba(111, 7, 5, 0.33), inset -22em -8em 6em -10em rgba(141, 51, 28, 0.29), inset 20em 1em 6em -10em rgba(141, 51, 28, 0.33), inset 0em -1em 10em -1em #943b1e, inset 0 -112em 16em -68em #c77563, inset 0 -76em 16em -28em #902020, inset 0 -7em 51em 7em #a13f23;
+                    box-shadow: inset 9em 1em 6em -6em rgba(103, 30, 14, 0.63), inset 0 72em 26em -26em rgba(210, 147, 124, 0.57), inset -19em -9em 6em -19em rgba(255, 255, 255, 0.85), inset -10em -4em 8em -6em #731804, inset 0 -16em 6em -12em rgba(111, 7, 5, 0.33), inset -22em -8em 6em -10em rgba(141, 51, 28, 0.29), inset 20em 1em 6em -10em rgba(141, 51, 28, 0.33), inset 0 -1em 10em -1em #943b1e, inset 0 -112em 16em -68em #c77563, inset 0 -76em 16em -28em #902020, inset 0 -7em 51em 7em #a13f23;
                     border-radius: inherit;
 
-                    &:before,
-                    &:after {
+                    &:after,
+                    &:before {
                         .pseudoclear;
                         display: block;
                         position: absolute;
@@ -1385,33 +1402,34 @@ body {
                     }
 
                     &:before {
-                        left: 0%;
+                        left: 0;
                     }
 
                     &:after {
-                        right: 0%;
+                        right: 0;
                     }
-
 
                     .blush {
                         top: 60%;
                         width: 3%;
-                        box-shadow: 0 1em 8em 3em  rgba(255, 255, 255, 0.25), 0 0 40em 12em rgba(255,67,102,0.85);
+                        box-shadow: 0 1em 8em 3em rgba(255, 255, 255, 0.25), 0 0 40em 12em rgba(255,67,102,0.85);
+
                         &.left {
                             left: 16%;
                             transform: rotate(25deg);
                         }
-                        &.right{
+
+                        &.right {
                             right: 16%;
                             transform: rotate(-25deg);
                         }
                     }
 
                     .forehead {
-                        left:0;
-                        right:0;
+                        left: 0;
+                        right: 0;
                         margin: auto;
-                        top:18%;
+                        top: 18%;
                         width: 15%;
                         box-shadow: 0 0 46em 21em #fbf3e5, 0 -38em 46em 11em #fbf3e5;
                     }
@@ -1518,17 +1536,17 @@ body {
 
                                 &.lash1 {
                                     top: 6%;
-right: -20%;
+                                    right: -20%;
                                 }
 
                                 &.lash2 {
                                     top: 31%;
-right: -11%;
+                                    right: -11%;
                                 }
 
                                 &.lash3 {
                                     top: 66%;
-right: 0%;
+                                    right: 0;
                                 }
 
                                 &.lash4 {
@@ -1547,6 +1565,7 @@ right: 0%;
                                 }
                             }
                         }
+
                         .eyelid {
                             width: 125%;
                             height: 146%;
@@ -1558,8 +1577,10 @@ right: 0%;
                             background-image: radial-gradient(ellipse closest-side at center 29%, #f9d1c8 29%, #c28c8c 42%, #b36666);
                             border-radius: ~'60% 40% 0 0/ 100% 75% 0 0';
                         }
+
                         .eyeliner {
                             border-radius: 100% 0;
+
                             &.inner {
                                 bottom: 8%;
                                 left: -5%;
@@ -1586,7 +1607,7 @@ right: 0%;
                             height: 125%;
                             background-color: #8c3d3d;
                             background-image: radial-gradient(ellipse farthest-side at 275% 83%, transparent 99%, rgba(54, 4, 4, 0.56) 104%),radial-gradient(circle at 41% 30%, #dbb5a7 33%, #8d3434 76%);
-                            box-shadow: -5em 6em 0em -4em #dba08f, 3em 2em 0em -1em #bc6474, -8em 5em 3em -3em rgba(225, 202, 181, 0.56), inset -4em 2em 4em -2em #751111;
+                            box-shadow: -5em 6em 0 -4em #dba08f, 3em 2em 0 -1em #bc6474, -8em 5em 3em -3em rgba(225, 202, 181, 0.56), inset -4em 2em 4em -2em #751111;
                             border-radius: inherit;
 
                             .iris {
@@ -1596,7 +1617,8 @@ right: 0%;
                                 border-radius: ~'100%';
                                 left: 37%;
                                 top: -25%;
-                                box-shadow: inset 0 9em 3em -2em rgba(32, 32, 32, 0.86), inset 0 0 1em 1em #505a57, inset 0 0 0 3em #8ba897, inset 0 0 0em 7.2em #341704;
+                                box-shadow: inset 0 9em 3em -2em rgba(32, 32, 32, 0.86), inset 0 0 1em 1em #505a57, inset 0 0 0 3em #8ba897, inset 0 0 0 7.2em #341704;
+
                                 &.leftiris {
                                     left: 14%;
                                     top: -14%;
@@ -1614,6 +1636,7 @@ right: 0%;
                                     border: 2em dotted rgba(243, 231, 199, 0.4);
                                     border-radius: 50%;
                                 }
+
                                 &:after {
                                     .pseudoclear;
                                     height: 100%;
@@ -1702,7 +1725,7 @@ right: 0%;
                             height: 20%;
                             width: 20%;
                             background: #ad543c;
-                            box-shadow: inset 0 -13em 5em -9em #dcaa9b, inset 0 0 3em 0em #a74839, 0 0 3em 3em #d29389, 0 12em 6em 7em #f1ccc3;
+                            box-shadow: inset 0 -13em 5em -9em #dcaa9b, inset 0 0 3em 0 #a74839, 0 0 3em 3em #d29389, 0 12em 6em 7em #f1ccc3;
                             left: 0;
                             right: 0;
                             margin: auto;
@@ -1713,15 +1736,16 @@ right: 0%;
                             width: 45%;
                             height: 33%;
                             border-radius: ~'50% 50% 35% 35% / 39% 60% 30% 56%';
-                            box-shadow: inset 0 -3em 5em 1em #ae564c, inset 0 -8em 6em -6em #9d5757, 0em 3em 3em -1em #994d3b;
+                            box-shadow: inset 0 -3em 5em 1em #ae564c, inset 0 -8em 6em -6em #9d5757, 0 3em 3em -1em #994d3b;
                             background-color: #d58f80;
-                            bottom: 0%;
+                            bottom: 0;
                             margin: auto;
 
                             &.left {
                                 right: 50%;
                                 transform: rotate(20deg);
                             }
+
                             &.right {
                                 left: 50%;
                                 transform: scaleX(-1) rotate(20deg);
@@ -1736,7 +1760,6 @@ right: 0%;
                                 bottom: 17%;
                                 background-color: #530505;
                                 box-shadow: 0 1em 3em 1em #650e0b, 2em 4em 3em 0 rgba(244, 231, 215, 0.24);
-
                             }
                         }
 
@@ -1749,6 +1772,7 @@ right: 0%;
                             box-shadow: 0 0 11em 5em rgba(239, 140, 129, 0.24);
                         }
                     }
+
                     .reflect {
                         border-radius: 50%;
                         width: 26%;
@@ -1779,11 +1803,13 @@ right: 0%;
                             right: 0;
                             top: 45%;
                         }
+
                         .toplips {
                             width: 100%;
                             height: 54%;
                             border-radius: 0 0 50% 50%;
                             bottom: 56%;
+
                             &:after {
                                 .pseudoclear;
                                 background: #b50202;
@@ -1840,7 +1866,7 @@ right: 0%;
                                 margin: auto;
                                 border-radius: 60%;
                                 filter: blur(0.7em);
-                                opacity: .5;
+                                opacity: 0.5;
                             }
                         }
 
@@ -1869,254 +1895,254 @@ right: 0%;
                         box-shadow: 0 0 1em 0.5em rgba(149, 47, 3, 0.56);
 
                         &.freckle1 {
-                        	left: 26%;
-                        	top: 55%;
-                         }
+                            left: 26%;
+                            top: 55%;
+                        }
 
                         &.freckle2 {
-                        	left: 27%;
-                        	top: 54%;
-                         }
+                            left: 27%;
+                            top: 54%;
+                        }
 
                         &.freckle3 {
-                        	left: 28%;
-                        	top: 56%;
-                         }
+                            left: 28%;
+                            top: 56%;
+                        }
 
                         &.freckle4 {
-                        	left: 29%;
-                        	top: 58%;
-                         }
+                            left: 29%;
+                            top: 58%;
+                        }
 
                         &.freckle5 {
-                        	left: 30%;
-                        	top: 54%;
-                         }
+                            left: 30%;
+                            top: 54%;
+                        }
 
                         &.freckle6 {
-                        	left: 31%;
-                        	top: 55%;
-                         }
+                            left: 31%;
+                            top: 55%;
+                        }
 
                         &.freckle7 {
-                        	left: 32%;
-                        	top: 54%;
-                         }
+                            left: 32%;
+                            top: 54%;
+                        }
 
                         &.freckle8 {
-                        	left: 33%;
-                        	top: 54%;
-                         }
+                            left: 33%;
+                            top: 54%;
+                        }
 
                         &.freckle9 {
-                        	left: 34%;
-                        	top: 55%;
-                         }
+                            left: 34%;
+                            top: 55%;
+                        }
 
                         &.freckle10 {
-                        	left: 35%;
-                        	top: 52%;
-                         }
+                            left: 35%;
+                            top: 52%;
+                        }
 
                         &.freckle11 {
-                        	left: 36%;
-                        	top: 52%;
-                         }
+                            left: 36%;
+                            top: 52%;
+                        }
 
                         &.freckle12 {
-                        	left: 37%;
-                        	top: 50%;
-                         }
+                            left: 37%;
+                            top: 50%;
+                        }
 
                         &.freckle13 {
-                        	left: 38%;
-                        	top: 54%;
-                         }
+                            left: 38%;
+                            top: 54%;
+                        }
 
                         &.freckle14 {
-                        	left: 39%;
-                        	top: 57%;
-                         }
+                            left: 39%;
+                            top: 57%;
+                        }
 
                         &.freckle15 {
-                        	left: 40%;
-                        	top: 52%;
-                         }
+                            left: 40%;
+                            top: 52%;
+                        }
 
                         &.freckle16 {
-                        	left: 41%;
-                        	top: 54%;
-                         }
+                            left: 41%;
+                            top: 54%;
+                        }
 
                         &.freckle17 {
-                        	left: 42%;
-                        	top: 53%;
-                         }
+                            left: 42%;
+                            top: 53%;
+                        }
 
                         &.freckle18 {
-                        	left: 43%;
-                        	top: 50%;
-                         }
+                            left: 43%;
+                            top: 50%;
+                        }
 
                         &.freckle19 {
-                        	left: 44%;
-                        	top: 52%;
-                         }
+                            left: 44%;
+                            top: 52%;
+                        }
 
                         &.freckle20 {
-                        	left: 45%;
-                        	top: 50%;
-                         }
+                            left: 45%;
+                            top: 50%;
+                        }
 
                         &.freckle21 {
-                        	left: 46%;
-                        	top: 48%;
-                         }
+                            left: 46%;
+                            top: 48%;
+                        }
 
                         &.freckle22 {
-                        	left: 47%;
-                        	top: 51%;
-                         }
+                            left: 47%;
+                            top: 51%;
+                        }
 
                         &.freckle23 {
-                        	left: 48%;
-                        	top: 53%;
-                         }
+                            left: 48%;
+                            top: 53%;
+                        }
 
                         &.freckle24 {
-                        	left: 49%;
-                        	top: 56%;
-                         }
+                            left: 49%;
+                            top: 56%;
+                        }
 
                         &.freckle25 {
-                        	left: 50%;
-                        	top: 50%;
-                         }
+                            left: 50%;
+                            top: 50%;
+                        }
 
                         &.freckle26 {
-                        	left: 51%;
-                        	top: 52%;
-                         }
+                            left: 51%;
+                            top: 52%;
+                        }
 
                         &.freckle27 {
-                        	left: 52%;
-                        	top: 47%;
-                         }
+                            left: 52%;
+                            top: 47%;
+                        }
 
                         &.freckle28 {
-                        	left: 53%;
-                        	top: 49%;
-                         }
+                            left: 53%;
+                            top: 49%;
+                        }
 
                         &.freckle29 {
-                        	left: 54%;
-                        	top: 51%;
-                         }
+                            left: 54%;
+                            top: 51%;
+                        }
 
                         &.freckle30 {
-                        	left: 55%;
-                        	top: 54%;
-                         }
+                            left: 55%;
+                            top: 54%;
+                        }
 
                         &.freckle31 {
-                        	left: 56%;
-                        	top: 49%;
-                         }
+                            left: 56%;
+                            top: 49%;
+                        }
 
                         &.freckle32 {
-                        	left: 57%;
-                        	top: 55%;
-                         }
+                            left: 57%;
+                            top: 55%;
+                        }
 
                         &.freckle33 {
-                        	left: 58%;
-                        	top: 53%;
-                         }
+                            left: 58%;
+                            top: 53%;
+                        }
 
                         &.freckle34 {
-                        	left: 59%;
-                        	top: 51%;
-                         }
+                            left: 59%;
+                            top: 51%;
+                        }
 
                         &.freckle35 {
-                        	left: 60%;
-                        	top: 49%;
-                         }
+                            left: 60%;
+                            top: 49%;
+                        }
 
                         &.freckle36 {
-                        	left: 61%;
-                        	top: 51%;
-                         }
+                            left: 61%;
+                            top: 51%;
+                        }
 
                         &.freckle37 {
-                        	left: 62%;
-                        	top: 55%;
-                         }
+                            left: 62%;
+                            top: 55%;
+                        }
 
                         &.freckle38 {
-                        	left: 63%;
-                        	top: 53%;
-                         }
+                            left: 63%;
+                            top: 53%;
+                        }
 
                         &.freckle39 {
-                        	left: 64%;
-                        	top: 49%;
-                         }
+                            left: 64%;
+                            top: 49%;
+                        }
 
                         &.freckle40 {
-                        	left: 65%;
-                        	top: 56%;
-                         }
+                            left: 65%;
+                            top: 56%;
+                        }
 
                         &.freckle41 {
-                        	left: 66%;
-                        	top: 50%;
-                         }
+                            left: 66%;
+                            top: 50%;
+                        }
 
                         &.freckle42 {
-                        	left: 67%;
-                        	top: 54%;
-                         }
+                            left: 67%;
+                            top: 54%;
+                        }
 
                         &.freckle43 {
-                        	left: 68%;
-                        	top: 55%;
-                         }
+                            left: 68%;
+                            top: 55%;
+                        }
 
                         &.freckle44 {
-                        	left: 69%;
-                        	top: 52%;
-                         }
+                            left: 69%;
+                            top: 52%;
+                        }
 
                         &.freckle45 {
-                        	left: 70%;
-                        	top: 56%;
-                         }
+                            left: 70%;
+                            top: 56%;
+                        }
 
                         &.freckle46 {
-                        	left: 71%;
-                        	top: 52%;
-                         }
+                            left: 71%;
+                            top: 52%;
+                        }
 
                         &.freckle47 {
-                        	left: 72%;
-                        	top: 56%;
-                         }
+                            left: 72%;
+                            top: 56%;
+                        }
 
                         &.freckle48 {
-                        	left: 73%;
-                        	top: 49%;
-                         }
+                            left: 73%;
+                            top: 49%;
+                        }
 
                         &.freckle49 {
-                        	left: 74%;
-                        	top: 53%;
-                         }
+                            left: 74%;
+                            top: 53%;
+                        }
 
                         &.freckle50 {
-                        	left: 75%;
-                        	top: 58%;
-                         }
+                            left: 75%;
+                            top: 58%;
+                        }
                     }
                 }
             }
@@ -2137,7 +2163,7 @@ right: 0%;
                 width: 98%;
                 overflow: hidden;
                 height: 100%;
-                box-shadow: inset 7em 0em 10em -2em #FA96A8, inset -3em -5em 6em -1em #fbf3e5, 7em 4em 4em -1em #fbf3e5;
+                box-shadow: inset 7em 0 10em -2em #FA96A8, inset -3em -5em 6em -1em #fbf3e5, 7em 4em 4em -1em #fbf3e5;
             }
 
             h3,
@@ -2184,7 +2210,7 @@ right: 0%;
                 clear: both;
 
                 &:after {
-                     :after {
+                    :after {
                         .pseudoclear;
                         clear: both;
                     }
@@ -2254,19 +2280,22 @@ right: 0%;
                 margin: 0;
                 width: 100%;
 
-                .alpha, .alpha:before, .alpha:after {
+                .alpha,
+                .alpha:after,
+                .alpha:before {
                     border-width: 0.05em !important;
                 }
             }
 
             h5 {
-                font-size:29em;
+                font-size: 29em;
                 margin: 7% 0;
             }
         }
     }
 }
 //}
+
 .clear {
     clear: both;
     height: 0.6em;
@@ -2281,9 +2310,8 @@ right: 0%;
     top: -37%;
     left: -71%;
     box-shadow: inset 0 -8em 8em -5em #686868;
-
-
 }
+
 .smoke {
     height: 12%;
     width: 2%;
@@ -2296,16 +2324,16 @@ right: 0%;
     filter: blur(4em);
 }
 
-
 .armshadowcontainer {
     top: 20.1%;
-right: -18%;
-width: 72%;
-height: 49%;
-overflow: hidden;
-transform: rotate(16deg);
-border-radius: ~'0 60% 0 0 / 0 77% 0 0';
+    right: -18%;
+    width: 72%;
+    height: 49%;
+    overflow: hidden;
+    transform: rotate(16deg);
+    border-radius: ~'0 60% 0 0 / 0 77% 0 0';
 }
+
 .abovearm {
     width: 16%;
     height: 57%;
@@ -2316,21 +2344,30 @@ border-radius: ~'0 60% 0 0 / 0 77% 0 0';
 
     &.shadow {
         width: 19%;
-    height: 96%;
-    top: 15%;
-    right: 29%;
-    transform: rotate(-54deg);
-    opacity: .5;
-    filter: blur(2em);
-        .segment, .flex, .palm, .cigarette, .forearmin, .forearm, .forearmedge {
+        height: 96%;
+        top: 15%;
+        right: 29%;
+        transform: rotate(-54deg);
+        opacity: 0.5;
+        filter: blur(2em);
+
+        .cigarette,
+        .flex,
+        .forearm,
+        .forearmedge,
+        .forearmin,
+        .palm,
+        .segment {
             background: #510606 !important;
             box-shadow: none !important;
         }
+
         .segment3:after {
             background: #510606 !important;
             box-shadow: none !important;
         }
     }
+
     .emptysleeve {
         top: 0;
         width: 150%;
@@ -2340,6 +2377,7 @@ border-radius: ~'0 60% 0 0 / 0 77% 0 0';
         border-radius: ~'0 0 50% 50% / 0 0 38% 24%';
         left: -21%;
     }
+
     .forearmin {
         top: 12%;
         left: 28%;
@@ -2368,6 +2406,7 @@ border-radius: ~'0 60% 0 0 / 0 77% 0 0';
         box-shadow: 4em 15em 16em 8em #fdd7c8, 0 0 12em 8em #e5ac98;
         transform: rotate(8deg);
     }
+
     .hand {
         top: -9%;
         right: -55%;
@@ -2393,12 +2432,11 @@ border-radius: ~'0 60% 0 0 / 0 77% 0 0';
             transform-origin: 100% 0;
             border-radius: ~'50% 50% 50% 50% / 80% 80% 20% 20%';
             background: #ffcdbd;
-            box-shadow: inset 29em -13em 20em -22em #be605a, inset 1em -18em 26em -6em #d08872, inset -9em 0em 5em -7em #fff5f4, inset -17em -11em 13em -7em #d88c7e;
+            box-shadow: inset 29em -13em 20em -22em #be605a, inset 1em -18em 26em -6em #d08872, inset -9em 0 5em -7em #fff5f4, inset -17em -11em 13em -7em #d88c7e;
         }
 
-
         .segment {
-            box-shadow: inset -9em 0em 5em -7em #fff5f4, inset -11em 0 5em -5em #cd8072, inset 9em 0 5em -5em #be605a;
+            box-shadow: inset -9em 0 5em -7em #fff5f4, inset -11em 0 5em -5em #cd8072, inset 9em 0 5em -5em #be605a;
             background: #f6b6a3;
 
             &.segment1 {
@@ -2431,11 +2469,11 @@ border-radius: ~'0 60% 0 0 / 0 77% 0 0';
                 &:after {
                     .pseudoclear;
                     top: -17%;
-                    right: 0%;
+                    right: 0;
                     background-color: #d00000;
                     width: 50%;
                     height: 70%;
-                    box-shadow: inset -5em 0em 2em -3em #ff96af, inset 0 -7em 5em -3em #870000, -2em 3em 3em 0em #c25858, -4em 4em 2em -1em #fdd3d3;
+                    box-shadow: inset -5em 0 2em -3em #ff96af, inset 0 -7em 5em -3em #870000, -2em 3em 3em 0 #c25858, -4em 4em 2em -1em #fdd3d3;
                     border-radius: ~'90% 6% 16% 89% / 40% 10% 16% 64%';
                 }
             }
@@ -2459,7 +2497,7 @@ border-radius: ~'0 60% 0 0 / 0 77% 0 0';
             }
 
             .segment {
-                box-shadow: inset -9em 0em 5em -7em #fff5f4, inset -18em 0 8em -9em #c96855, inset 12em 0 8em -10em #b4594e;
+                box-shadow: inset -9em 0 5em -7em #fff5f4, inset -18em 0 8em -9em #c96855, inset 12em 0 8em -10em #b4594e;
                 background: #d1907c;
 
                 &.segment1 {
@@ -2496,7 +2534,7 @@ border-radius: ~'0 60% 0 0 / 0 77% 0 0';
                 bottom: 58%;
 
                 .segment1 {
-                    box-shadow: inset -9em 0em 5em -7em #fff5f4, inset -11em 6em 5em -6em #cd8072, inset 9em 7em 5em -7em #be605a;
+                    box-shadow: inset -9em 0 5em -7em #fff5f4, inset -11em 6em 5em -6em #cd8072, inset 9em 7em 5em -7em #be605a;
                 }
             }
 
@@ -2520,8 +2558,8 @@ border-radius: ~'0 60% 0 0 / 0 77% 0 0';
                 .segment2 {
                     &:after {
                         .pseudoclear;
-                        top:70%;
-                        left:-20%;
+                        top: 70%;
+                        left: -20%;
                         width: 120%;
                         opacity: 0.5;
                         transform: rotate(45deg);
@@ -2545,5 +2583,4 @@ border-radius: ~'0 60% 0 0 / 0 77% 0 0';
         }
     }
 }
-
 /* RETRO CIGARETTE AD*/
