@@ -3,9 +3,9 @@
 @skin: #ecc5b5;
 @backgroundred: #ca2902;
 @teal: #329482;
-@red: #c00000;
+@red: #a41d1d;
 @pink: #e18093;
-@bikinicolor: @pink;
+@bikinicolor: @red;
 @bikinistitchcolor: darken(@bikinicolor, 40%);
 @bikinistitch: 1em dashed fade(@bikinistitchcolor, 30%);
 
@@ -52,14 +52,14 @@ h6 {
 
 body {
     font-size: 1px;
-    background-color: #e7cacb;
+    background-color: #d5c1c2;
     padding: 20em 0 30em;
 
     .paper {
         position: relative;
         margin: auto;
         background-color: #6fae93;
-        background-image: radial-gradient(ellipse closest-corner at center center, #abd0c9, #0f8c73);
+        background-image: radial-gradient(ellipse closest-corner at center center, #eee7e4 62%, #e6d6d1 81%);
         outline: 10em solid #ebdddd;
         overflow: hidden;
         width: 598em;
@@ -76,7 +76,7 @@ body {
                 left: 0;
                 right: 0;
                 font-size: 163.5em;
-                color: #f8eee4;
+                color: #911208;
                 margin: 0 auto;
                 line-height: 1;
                 text-align: center;
@@ -84,7 +84,7 @@ body {
                 vertical-align: middle;
 
                 &.shadow {
-                    color: rgba(0, 0, 0, 0.4);
+                    color: transparent;
                     filter: blur(5px);
                     left: 20px;
                     top: 17px;
@@ -707,7 +707,7 @@ body {
                     width: 12%;
                     height: 25%;
                     border-radius: ~'150% 0 0 150%';
-                    box-shadow: inset -3em -6em 1em 6em #b57b65, inset 0 -16em 3em 7em #993e32, 17em 37em 9em 9em rgba(58, 20, 1, 0.57);
+                    box-shadow: inset -3em -6em 1em 6em #b57b65, inset 0 -16em 3em 7em #993e32, 4em 9em 9em 6em rgba(97, 16, 1, 0.82);
 
                     &:after {
                         display: block;
@@ -851,35 +851,35 @@ body {
 
                 .waist {
                     top: 35%;
-                    left: 15%;
+                    left: 15.5%;
                     height: 40%;
                     width: 67%;
                     overflow: hidden;
                     transform: rotateZ(-9deg);
                     transform-origin: 100% 0;
-                    border-radius: ~'2% 2% 50% 50% / 10% 10% 32% 15%';
+                    border-radius: ~'2% 2% 50% 50% / 10% 10% 56% 32%';
 
                     .shirt {
                         width: 95%;
-                        height: 120%;
+                        height: 115%;
                         overflow: hidden;
                         background-color: #f5c2b0;
                         border-radius: ~'12% 12% 50% 27% / 2% 2% 98% 98%';
                         box-shadow: inset 0 26em 123em 40em #6d150c;
 
                         .bottomshadow {
-                            width: 80%;
+                            width: 86%;
                             left: 7%;
-                            height: 15%;
-                            bottom: 16%;
-                            border-radius: 50%;
+                            height: 53%;
+                            bottom: 13%;
+                            border-radius: ~'0 0 50% 50% / 0 0% 33% 20%';
                             transform: rotate(1deg);
-                            box-shadow: inset 0 -14em 23em 0 rgba(144, 66, 52, 0.18);
+                            box-shadow: inset -13em -12em 23em -3em rgba(135, 58, 45, 0.45);
                         }
 
                         .underboobs {
                             width: 95%;
-                            height: 35%;
+                            height: 38%;
                             top: 22%;
                             transform: rotateZ(11deg);
                             border-radius: ~'0 0 50% 50% / 0 0 21% 6%';
@@ -1276,15 +1276,15 @@ body {
                 }
 
                 .banner {
-                    box-shadow: inset 0 -17em 17em 36em fade(darken(@bikinicolor, 80%), 15%), inset -28em -60em 123em 66em darken(@bikinicolor, 30%);
-                    top: 76%;
-                    left: 11%;
-                    height: 55%;
-                    width: 94%;
+                    box-shadow: inset 0 -17em 17em 36em fade(darken(@bikinicolor, 80%), 15%), inset -13em 32em 122em -15em darken(@bikinicolor, 30%);
+                    top: 75%;
+                    left: 17%;
+                    height: 31%;
+                    width: 77%;
                     overflow: hidden;
-                    background-image: radial-gradient(ellipse at center 14%, lighten(@bikinicolor, 15%), darken(@bikinicolor, 3%) 35%);
+                    background-image: radial-gradient(ellipse at center 38%, lighten(@bikinicolor, 15%), darken(@bikinicolor, 3%) 35%);
                     transform: rotate(-6deg);
-                    border-radius: ~'33% 39% 0% 0% / 100% 100% 0% 0%';
+                    border-radius: ~'33% 39% 2% 2% / 70% 70% 30% 30%';
                     .elbowshadow {
                         right: 21%;
                         height: 25%;
@@ -1316,15 +1316,13 @@ body {
 
                     &:before {
                         .pseudoclear;
-                        width: 60%;
-                        left: 15%;
+                        width: 100%;
                         background: #541003;
-                        top: -2%;
+                        top: -36%;
                         opacity: 0.55;
-                        height: 70%;
-                        border-radius: 20% 20% 20% 50%;
-                        box-shadow: 0 0 9em 7em #541003;
-                        transform: rotate(-56deg);
+                        height: 95%;
+                        border-radius: 50%;
+                        box-shadow: 0 0 4em 7em #541003;
                     }
                 }
 
