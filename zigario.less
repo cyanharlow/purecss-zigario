@@ -171,7 +171,8 @@ body {
                     .bangs,
                     .curl,
                     .hair,
-                    .transparence {
+                    .transparence,
+                    .wing {
                         overflow: hidden;
 
                         &:after {
@@ -194,12 +195,12 @@ body {
 
                         .strand {
                             background: #b74a03;
-                            background: radial-gradient(farthest-corner at top right, #921d01 10%, #ffce89 24%, #fcddaf 28%, #dc4003 35%, #7c0b00 56%);
+                            background: radial-gradient(farthest-corner at top right, #a52203 12%, #ffce89 22%, #f9c77c 26%, #e54506 33%, #b53004 56%);
                             height: 114%;
                             width: 70%;
                             top: -1%;
                             margin: auto;
-                            box-shadow: 0 3em 4em 1em #782802, inset 0 0 2em 1em #582801;
+                            box-shadow: 0 3em 2em 1em #782802, inset 0 2em 2em 0 #7a2903;
                             border-radius: inherit;
                             opacity: 0.5;
 
@@ -525,18 +526,60 @@ body {
                                 background: radial-gradient(farthest-corner at top right, #bd3203 4%, #f99228 27%, #ef5c04 51%);
                             }
                         }
+                    }
 
+                    .tophollow {
+                        border-radius: 50%;
+                        top: 15%;
+                        left: -6%;
+                        height: 12%;
+                        width: 27%;
+                        box-shadow: inset -14em 14em 7em -10em #741902, -5em 3em 0 -4em #d58121, -1em -2em 0 0 #de7e0f;
+                    }
+
+                    .wing {
                         &.left {
                             width: 102%;
-                            height: 35%;
+                            height: 31%;
                             border-radius: 50%;
                             margin: auto;
-                            top: 49%;
-                            transform: scaleX(-1) rotate(11deg);
-                            left: 26%;
+                            top: 54%;
+                            transform: scaleX(-1) rotate(146deg);
+                            left: 8%;
 
                             .strand {
-                                background: radial-gradient(farthest-corner at top right, #b73802 26%, #fb8620 41%, #942500 66%);
+                                background: none;
+                                box-shadow: 0 -3em 2em 0 #782802, inset -17em -12em 2em -2em #d04401, inset -3em 6em 1em -2em #fdb367;
+                            }
+                        }
+
+                        &.topbehind {
+                            width: 89%;
+                            height: 27%;
+                            border-radius: 50%;
+                            margin: auto;
+                            top: 60%;
+                            transform: rotate(168deg);
+                            left: 2%;
+
+                            .strand {
+                                background: none;
+                                box-shadow: 0 -3em 2em 0 #e9682b, inset -17em -12em 2em -14em #c84a0c, inset -3em 6em 1em -2em #a74f11;
+                            }
+                        }
+
+                        &.top {
+                            width: 98%;
+                            height: 35%;
+                            border-radius: ~'49% 41% 0 0 / 94% 70% 10% 10%';
+                            margin: auto;
+                            top: -4%;
+                            transform: rotate(-34deg);
+                            left: -19%;
+
+                            .strand {
+                                background: none;
+                                box-shadow: 0 -3em 2em 0 #782802, inset -17em -12em 2em -2em #d04401, inset -3em 6em 1em -2em #fdb367;
                             }
                         }
                     }
@@ -677,7 +720,7 @@ body {
                             }
 
                             .strand {
-                                background: radial-gradient(farthest-corner at top right, #ef4f02, #fba523 31%, #c14902 47%);
+                                background: radial-gradient(farthest-corner at top right, #c44102 20%, #fdb64a 31%, #c14902 47%);
                             }
                         }
 
@@ -1247,21 +1290,20 @@ body {
                     width: 47%;
                     background-color: @bikinicolor;
                     background-image: linear-gradient(72deg, darken(@bikinicolor, 25%) 2%, transparent 20%), linear-gradient(-72deg, darken(@bikinicolor, 25%) 7%, transparent 32%), radial-gradient(ellipse at center bottom, lighten(@bikinicolor, 15%), darken(@bikinicolor, 3%) 55%);
-                    box-shadow: 0 4em 7em -1em  fade(darken(@bikinicolor, 30%), 17%);
+                    box-shadow: 0 4em 7em -1em fade(darken(@bikinicolor, 30%), 17%);
                     border-radius: ~'0 0 50% 50% / 0 0 50% 50%';
                     transform: rotate(-7deg);
                     overflow: hidden;
 
                     .topshadow {
                         width: 88%;
-                        left: 5%;
+                        left: 1%;
                         height: 83%;
-                        top: -34%;
+                        top: -33%;
                         border-radius: 50%;
-                        transform: rotate(-1deg);
+                        transform: rotate(3deg);
                         box-shadow: 0 6em 4em 1em fade(lighten(@bikinicolor, 15%), 30%);
                     }
-
 
                     .topseam {
                         border-bottom: @bikinistitch;
@@ -1270,14 +1312,13 @@ body {
                         height: 140%;
                         bottom: 8%;
                         border-radius: 50%;
-                        box-shadow: 0em 20em 7em -19em tint(@bikinicolor, 9%), inset 0em -4em 7em -2em fade(darken(@bikinicolor, 20%), 25%);
+                        box-shadow: 0 20em 7em -19em tint(@bikinicolor, 9%), inset 0 -4em 7em -2em fade(darken(@bikinicolor, 20%), 25%);
                     }
-
                 }
 
                 .banner {
                     box-shadow: inset 0 -17em 17em 36em fade(darken(@bikinicolor, 80%), 15%), inset -13em 32em 122em -15em darken(@bikinicolor, 30%);
-                    top: 75%;
+                    top: 73%;
                     left: 17%;
                     height: 31%;
                     width: 77%;
@@ -1285,6 +1326,7 @@ body {
                     background-image: radial-gradient(ellipse at center 38%, lighten(@bikinicolor, 15%), darken(@bikinicolor, 3%) 35%);
                     transform: rotate(-6deg);
                     border-radius: ~'33% 39% 2% 2% / 70% 70% 30% 30%';
+
                     .elbowshadow {
                         right: 21%;
                         height: 25%;
@@ -2274,7 +2316,7 @@ body {
             color: #f7ecd9;
 
             h6 {
-                font-size: 20.5em;
+                font-size: 34.5em;
                 margin: 0;
                 width: 100%;
 
@@ -2286,7 +2328,7 @@ body {
             }
 
             h5 {
-                font-size: 29em;
+                font-size: 52em;
                 margin: 7% 0;
             }
         }
