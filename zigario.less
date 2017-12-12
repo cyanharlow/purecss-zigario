@@ -530,22 +530,24 @@ body {
 
                     .tophollow {
                         border-radius: 50%;
-                        top: 15%;
-                        left: -6%;
-                        height: 12%;
-                        width: 27%;
-                        // box-shadow: inset -14em 14em 7em -10em #741902, -5em 3em 0 -4em #d58121, -1em -2em 0 0 #de7e0f;
+overflow: hidden;
+top: -2%;
+left: 6%;
+height: 23%;
+width: 25%;
+box-shadow: inset -3em 2em 11em 0 #8c380e, 3em -3em 0 -1em #df752a, -3em -3em 0 -1em #c4590e;
+background-image: radial-gradient(ellipse at 156% 39%, #401001 35%, #7e2002 68%, transparent 77%);
                     }
 
                     .wing {
                         &.left {
                             width: 102%;
-height: 31%;
-border-radius: 50%;
-margin: auto;
-top: 59%;
-transform: scaleX(-1) rotate(171deg);
-left: 8%;
+                            height: 31%;
+                            border-radius: 50%;
+                            margin: auto;
+                            top: 59%;
+                            transform: scaleX(-1) rotate(171deg);
+                            left: 8%;
 
                             .strand {
                                 background: none;
@@ -553,7 +555,7 @@ left: 8%;
                             }
                         }
 
-                        &.topbehind {
+                        &.rightbehind {
                             width: 89%;
                             height: 27%;
                             border-radius: 50%;
@@ -579,7 +581,22 @@ left: 8%;
 
                             .strand {
                                 background: none;
-                                box-shadow: 0 -3em 2em 0 rgba(120,40,2,0.6), inset -17em 2em 2em -12em #df6d03, inset -3em 6em 1em -2em #832e02;
+                                box-shadow: 0 -1em 2em 0 rgba(120,40,2,0.6), inset -16em 4em 2em -12em #fd800b, inset -2em 7em 1em -3em #832e02;
+                            }
+                        }
+
+                        &.curlin {
+                            width: 214%;
+height: 89%;
+border-radius: ~'49% 41% 59% 0 / 94% 70% 18% 10%';
+margin: auto;
+top: -22%;
+transform: rotate(237deg);
+left: -59%;
+
+                            .strand {
+                                background: none;
+                                box-shadow: 0 -1em 2em 0 rgba(120,40,2,0.6), inset -16em 4em 2em -12em #fd800b, inset -2em 7em 1em -3em #832e02;
                             }
                         }
                     }
@@ -691,6 +708,19 @@ left: 8%;
 
                             .strand {
                                 background: radial-gradient(farthest-corner at top right, #6d1c02 11%, #b54605 38%, #1f0500 57%);
+                            }
+                        }
+
+                        &.topcurl {
+                            top: -10%;
+right: 21%;
+width: 73%;
+height: 26%;
+transform: rotate(-13deg);
+border-radius: ~'38% 34% 1% 4% / 72% 55% 24% 6%';
+
+                            .strand {
+                                background: radial-gradient(farthest-corner at top right, #a53701 11%, #fd5f03 15%, #f9b45f 20%, #e55908 34%, #4e2100 64%);
                             }
                         }
 
