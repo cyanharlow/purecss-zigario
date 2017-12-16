@@ -516,32 +516,56 @@ body {
 
                         .strand {
                             height: 105% !important;
-                            background: radial-gradient(farthest-corner at top right, #bd3203 4%, #f99228 27%, #ef5c04 51%);
+                            background: radial-gradient(farthest-corner at top right, #c63d09 24%, #fba54c 38%, #fe9a33 46%, #ef5c04 59%);
                         }
                     }
                 }
 
+                .curlshadow {
+                    border-radius: 50%;
+                    top: -11%;
+                    left: 6%;
+                    height: 21%;
+                    width: 32%;
+                    box-shadow: -11em 10em 8em -9em rgba(125, 38, 7, 0.52), inset 23em 0 4em -6em rgba(125, 38, 7, 0.47);
+                }
+
                 .tophollow {
                     border-radius: 50%;
-                    overflow: hidden;
-                    top: -4%;
-                    left: 10%;
-                    height: 23%;
-                    width: 21%;
-                    background-image: radial-gradient(ellipse at 49% 73%, #621b04 11%, rgba(225,103,13,0.5) 53%, transparent 70%);
+                    // overflow: hidden;
+                    top: -13%;
+                    left: 3%;
+                    height: 30%;
+                    width: 35%;
+                    background-image: radial-gradient(ellipse at 79% 2%, #621b04 11%, rgba(225,103,13,0.15) 32%, transparent 50%);
 
                     .curlin {
-                        width: 130%;
-                        height: 78%;
+                        width: 118%;
+                        height: 96%;
                         border-radius: 50%;
                         margin: auto;
-                        top: -8%;
-                        transform: rotate(197deg);
-                        left: -22%;
+                        top: -20%;
+                        transform: rotate(-159deg);
+                        left: 10%;
 
                         .strand {
                             background: none;
-                            box-shadow: 0 -1em 2em 0 rgba(120,40,2,0.6), inset -14em 4em 2em -12em #df660d, inset -2em 5em 1em -3em #e67929;
+                            box-shadow: inset -3em 1em 1em -1em rgba(120,40,2,0.2), 14em -2em 2em -12em #ffb458, 2em -5em 1em -3em #c55300;
+                        }
+                    }
+
+                    .curlup {
+                        width: 118%;
+                        height: 94%;
+                        border-radius: 50%;
+                        margin: auto;
+                        top: -17%;
+                        transform: rotate(-105deg);
+                        left: 8%;
+
+                        .strand {
+                            background: none;
+                            box-shadow: inset -3em 1em 1em -1em rgba(120,40,2,0.0), 14em -2em 2em -12em #ffb458, 2em -5em 1em -3em #c55300;
                         }
                     }
                 }
@@ -596,11 +620,11 @@ body {
                 .hair {
                     &.left {
                         border-radius: ~'0% 20% 80% 0% / 0% 40% 60% 0%';
-                        transform: rotateZ(36deg) scaleX(-1);
+                        transform: rotateZ(66deg) scaleX(-1);
                         box-shadow: -4em -1em 1em 0 #c48069;
                         background: #cc5b04;
-                        left: -18%;
-                        top: 0;
+                        left: -15%;
+                        top: -4%;
                         height: 67%;
                         width: 82%;
 
@@ -706,13 +730,13 @@ body {
                     &.topcurl {
                         top: -10%;
                         right: 21%;
-                        width: 73%;
+                        width: 58%;
                         height: 26%;
                         transform: rotate(-13deg);
-                        border-radius: ~'38% 34% 1% 4% / 72% 55% 24% 6%';
+                        border-radius: ~'49% 46% 1% 80% / 22% 55% 24% 75%';
 
                         .strand {
-                            background: radial-gradient(farthest-corner at top right, #a53701 11%, #fd5f03 15%, #f9b45f 20%, #e55908 34%, #883b02 64%);
+                            background: radial-gradient(farthest-corner at 72% -2%, #ffc175 18%, #e8681e 32%, #883b02 64%);
                         }
                     }
 
@@ -1459,8 +1483,19 @@ body {
                 width: 25%;
                 height: 35%;
                 transform: rotate(-3deg);
-                box-shadow: 1em -18em 4em -15em #d29f87, -14em -14em 4em -15em #904a31, 29em 0 14em -17em #651f03ad, -29em 0 9em -17em #631d0194;
-                border-radius: ~'50% 17% 50% 50% / 28% 39% 61% 61%';
+                box-shadow: 0 -18em 4em -15em #d29f87, 0 -14em 4em -15em #904a31, 29em 0 14em -17em rgba(101, 31, 3, 0.68), -29em 0 9em -17em rgba(99, 29, 1, 0.6);
+                border-radius: ~'17% 17% 50% 50% / 39% 39% 61% 61%';
+
+                .scalp {
+                    height: 11%;
+                    right: 17%;
+                    top: -10%;
+                    width: 2%;
+                    background: #c38269;
+                    box-shadow: 0 -2em 5em 1em #bc7760;
+                    border-radius: 90% 50% 0 0;
+                    transform: rotate(-14deg);
+                }
 
                 .face {
                     position: relative;
@@ -1470,7 +1505,7 @@ body {
                     overflow: hidden;
                     width: 100%;
                     height: 100%;
-                    box-shadow: inset 9em 1em 6em -6em rgba(103, 30, 14, 0.63), inset 0 72em 26em -26em rgba(210, 147, 124, 0.57), inset -19em -9em 6em -19em rgba(255, 255, 255, 0.85), inset -10em -4em 8em -6em #731804, inset 0 -16em 6em -12em rgba(111, 7, 5, 0.33), inset -22em -8em 6em -10em rgba(141, 51, 28, 0.29), inset 20em 1em 6em -10em rgba(141, 51, 28, 0.33), inset 0 -1em 10em -1em #943b1e, inset 0 -112em 16em -68em #c77563, inset 0 -76em 16em -28em #902020, inset 0 -7em 51em 7em #a13f23;
+                    box-shadow: inset 0 72em 26em -26em rgba(210, 147, 124, 0.57), inset -19em -9em 6em -19em rgba(255, 255, 255, 0.85), inset -10em -4em 8em -6em #731804, inset 0 -16em 6em -12em rgba(111, 7, 5, 0.33), inset -22em -8em 6em -10em rgba(141, 51, 28, 0.29), inset 20em 1em 6em -10em rgba(141, 51, 28, 0.33), inset 0 -1em 10em -1em #943b1e, inset 0 -112em 16em -68em #c77563, inset 0 -76em 16em -28em #902020, inset 0 -7em 51em 7em #a13f23;
                     border-radius: inherit;
 
                     &:after,
