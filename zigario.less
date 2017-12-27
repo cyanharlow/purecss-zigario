@@ -5,7 +5,8 @@
 @teal: #329482;
 @red: #a41d1d;
 @pink: #e18093;
-@bikinicolor: @red;
+@yellow: #cc9a00;
+@bikinicolor: @teal;
 @bikinistitchcolor: darken(@bikinicolor, 40%);
 @bikinistitch: 1em dashed fade(@bikinistitchcolor, 30%);
 
@@ -27,14 +28,14 @@
     position: static;
     padding: 0 0 30px;
     font-family: 'Century Gothic', Arial, sans-serif;
-    color: #650518;
+    color: #054365;
 
     .separator {
         padding: 0 5px;
     }
 
     a {
-        color: #b3173e;
+        color: #28707b;
     }
 }
 
@@ -52,7 +53,7 @@ h6 {
 
 body {
     font-size: 1px;
-    background-color: #d5c8c1;
+    background-color: #8ba8b3;
     padding: 20em 0 30em;
 
     .paper {
@@ -1354,7 +1355,7 @@ body {
                     height: 12%;
                     width: 47%;
                     background-color: @bikinicolor;
-                    background-image: linear-gradient(72deg, darken(@bikinicolor, 25%) 2%, transparent 20%), linear-gradient(-72deg, darken(@bikinicolor, 25%) 7%, transparent 32%), radial-gradient(ellipse at center bottom, lighten(@bikinicolor, 15%), darken(@bikinicolor, 3%) 55%);
+                    background-image: linear-gradient(72deg, darken(@bikinicolor, 25%) 2%, transparent 20%), linear-gradient(-72deg, darken(@bikinicolor, 25%) 7%, transparent 32%), radial-gradient(ellipse at center bottom, lighten(@bikinicolor, 7%), darken(@bikinicolor, 5%) 55%);
                     box-shadow: 0 4em 7em -1em fade(darken(@bikinicolor, 30%), 17%);
                     border-radius: ~'0 0 50% 50% / 0 0 50% 50%';
                     transform: rotate(-7deg);
@@ -1362,9 +1363,9 @@ body {
 
                     .topshadow {
                         width: 88%;
-                        left: 1%;
+                        left: 4%;
                         height: 83%;
-                        top: -33%;
+                        top: -38%;
                         border-radius: 50%;
                         transform: rotate(3deg);
                         box-shadow: 0 6em 4em 1em fade(lighten(@bikinicolor, 15%), 30%);
@@ -1797,7 +1798,7 @@ body {
                         left: 0;
                         right: 0;
                         height: 30%;
-                        width: 23%;
+                        width: 24%;
                         top: 39%;
                         text-align: center;
 
@@ -1809,9 +1810,9 @@ body {
                             position: absolute;
                             top: -2%;
                             width: 33%;
-                            bottom: 31%;
+                            bottom: 5%;
                             border-radius: ~'2% 98% 0 0 / 25% 51% 0 0';
-                            box-shadow: 3em -1em 4em 0 rgba(140, 33, 33, 0.12), inset -4em 3em 4em 0 rgba(150, 41, 41, 0.17);
+                            box-shadow: 3em -1em 4em 0 rgba(140, 33, 33, 0.12), inset -6em 3em 4em 0 rgba(150, 41, 41, 0.17);
                         }
 
                         &:after {
@@ -1826,7 +1827,7 @@ body {
 
                         .bridge {
                             background-color: #d69b92;
-                            background-image: radial-gradient(ellipse at center bottom, #fff0e4, #e1a295 46%);
+                            background-image: radial-gradient(ellipse at center bottom, #f6e7d8, #e6afa4 62%);
                             margin: auto;
                             width: 62%;
                             height: 90%;
@@ -1834,7 +1835,7 @@ body {
                             left: 0;
                             right: 0;
                             bottom: 3%;
-                            box-shadow: 0 -6em 7em -1em #eaa893, 0 6em 3em -2em #841717, inset 0 -11em 6em -7em #b13c3c, inset 0 16em 5em -10em #e6a79f;
+                            box-shadow: 0 -6em 7em -1em #eaa893, inset 0 -9em 3em -5em rgba(163, 67, 57, 0.78), inset 0 16em 5em -10em #e6a79f;
                         }
 
                         .philtrum {
