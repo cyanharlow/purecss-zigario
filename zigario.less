@@ -619,14 +619,16 @@ body {
 
                 .hair {
                     &.left {
-                        border-radius: 50%;
-                        transform: rotateZ(21deg) scaleX(-1);
-                        box-shadow: -4em -1em 1em 0 #c48069;
-                        background: #cc5b04;
-                        left: -15%;
-                        top: -5%;
-                        height: 67%;
-                        width: 82%;
+                        border-radius: 34% 52% 10% 15%;
+                        transform: rotateZ(-71deg);
+                        left: -24%;
+                        top: 1%;
+                        height: 48%;
+                        width: 89%;
+
+                        .strand {
+                            background-image: radial-gradient(farthest-corner at top right, #ffb443 17%, #ca4418 20%, #ae3903 29%);
+                        }
                     }
                 }
 
@@ -1723,7 +1725,7 @@ body {
                             width: 100%;
                             height: 125%;
                             background-color: #8c3d3d;
-                            background-image: radial-gradient(ellipse farthest-side at 275% 83%, transparent 99%, rgba(54, 4, 4, 0.56) 104%),radial-gradient(circle at 41% 30%, #dbb5a7 33%, #8d3434 76%);
+                            background-image: radial-gradient(ellipse farthest-side at 275% 83%, transparent 99%, rgba(54,4,4,0.56) 104%),radial-gradient(circle at 41% 30%, #efd4ca 33%, #8d3434 76%);
                             box-shadow: -5em 6em 0 -4em #dba08f, 3em 2em 0 -1em #bc6474, -8em 5em 3em -3em rgba(225, 202, 181, 0.56), inset -4em 2em 4em -2em #751111;
                             border-radius: inherit;
 
@@ -1827,7 +1829,7 @@ body {
 
                         .bridge {
                             background-color: #d69b92;
-                            background-image: radial-gradient(ellipse at center bottom, #f6e7d8, #e6afa4 62%);
+                            background-image: radial-gradient(ellipse closest-side at center 75%, #faeadd, transparent 73%), radial-gradient(ellipse at center bottom, #e8c8b6, #e6afa4 62%);
                             margin: auto;
                             width: 62%;
                             height: 90%;
